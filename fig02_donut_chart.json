@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 620,
+  "height": 320,
+  "data": {
+    "values": [
+      {
+        "group": "Plants",
+        "n": 1514
+      },
+      {
+        "group": "Birds",
+        "n": 186
+      },
+      {
+        "group": "Mammals",
+        "n": 152
+      },
+      {
+        "group": "Invertebrates",
+        "n": 114
+      },
+      {
+        "group": "Reptiles",
+        "n": 102
+      },
+      {
+        "group": "Fish",
+        "n": 87
+      },
+      {
+        "group": "Amphibians",
+        "n": 53
+      }
+    ]
+  },
+  "mark": {
+    "type": "arc",
+    "innerRadius": 70,
+    "outerRadius": 140,
+    "stroke": "#FDFBF7",
+    "strokeWidth": 2
+  },
+  "encoding": {
+    "theta": {
+      "field": "n",
+      "type": "quantitative",
+      "stack": true
+    },
+    "color": {
+      "field": "group",
+      "type": "nominal",
+      "title": "Group",
+      "scale": {
+        "domain": [
+          "Plants",
+          "Birds",
+          "Mammals",
+          "Invertebrates",
+          "Reptiles",
+          "Fish",
+          "Amphibians"
+        ],
+        "range": [
+          "#1A5653",
+          "#C47D5A",
+          "#B89339",
+          "#9B72AA",
+          "#5DB89D",
+          "#457B9D",
+          "#9E3B5C"
+        ]
+      },
+      "legend": {
+        "orient": "right",
+        "direction": "vertical",
+        "title": "Group",
+        "titleFontSize": 13,
+        "titlePadding": 10,
+        "labelFontSize": 13,
+        "labelLimit": 500,
+        "symbolType": "circle",
+        "symbolSize": 150,
+        "rowPadding": 10,
+        "offset": 8
+      }
+    },
+    "tooltip": [
+      {
+        "field": "group",
+        "title": "Group"
+      },
+      {
+        "field": "n",
+        "title": "Species"
+      }
+    ]
+  }
+}

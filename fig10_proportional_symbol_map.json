@@ -1,0 +1,386 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 350,
+  "projection": {
+    "type": "conicEqualArea",
+    "rotate": [
+      -134,
+      0
+    ],
+    "center": [
+      0,
+      -28
+    ],
+    "parallels": [
+      -18,
+      -36
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#D8D0C0",
+        "stroke": "#C4BBA9",
+        "strokeWidth": 0.6
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "st": "WA",
+            "lat": -25.5,
+            "lon": 122.3,
+            "mha": 78.7,
+            "parks": 1888,
+            "pct": 31.1
+          },
+          {
+            "st": "NT",
+            "lat": -19.4,
+            "lon": 133.4,
+            "mha": 33.2,
+            "parks": 84,
+            "pct": 24.6
+          },
+          {
+            "st": "SA",
+            "lat": -30,
+            "lon": 135.8,
+            "mha": 30,
+            "parks": 2085,
+            "pct": 30.4
+          },
+          {
+            "st": "QLD",
+            "lat": -22.5,
+            "lon": 144.4,
+            "mha": 16.2,
+            "parks": 1230,
+            "pct": 9.4
+          },
+          {
+            "st": "NSW",
+            "lat": -32,
+            "lon": 147,
+            "mha": 8.4,
+            "parks": 2657,
+            "pct": 10.4
+          },
+          {
+            "st": "VIC",
+            "lat": -36.9,
+            "lon": 144.5,
+            "mha": 4,
+            "parks": 4709,
+            "pct": 17.7
+          },
+          {
+            "st": "TAS",
+            "lat": -42,
+            "lon": 146.6,
+            "mha": 2.9,
+            "parks": 1721,
+            "pct": 42.8
+          },
+          {
+            "st": "ACT",
+            "lat": -35.5,
+            "lon": 149,
+            "mha": 0.13,
+            "parks": 51,
+            "pct": 55.9
+          }
+        ]
+      },
+      "mark": {
+        "type": "circle",
+        "opacity": 0.7,
+        "stroke": "#fff",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "mha",
+          "type": "quantitative",
+          "title": "Protected area (million ha)",
+          "scale": {
+            "type": "linear",
+            "domain": [
+              0,
+              79
+            ],
+            "range": [
+              15,
+              2800
+            ]
+          }
+        },
+        "color": {
+          "field": "mha",
+          "type": "quantitative",
+          "title": "Protected area (million ha)",
+          "scale": {
+            "scheme": "tealblues"
+          },
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "st",
+            "title": "State"
+          },
+          {
+            "field": "mha",
+            "title": "Protected area (million ha)",
+            "format": ".1f"
+          },
+          {
+            "field": "pct",
+            "title": "% of state protected",
+            "format": ".1f"
+          },
+          {
+            "field": "parks",
+            "title": "Number of protected areas",
+            "format": ","
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -37.2,
+            "lon": 142.3
+          },
+          {
+            "lat": -37,
+            "lon": 143.7
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#7A8E82",
+        "strokeWidth": 0.9,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -43.7,
+            "lon": 146.6
+          },
+          {
+            "lat": -42.7,
+            "lon": 146.6
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#7A8E82",
+        "strokeWidth": 0.9,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -35.4,
+            "lon": 151
+          },
+          {
+            "lat": -35.45,
+            "lon": 149.7
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#7A8E82",
+        "strokeWidth": 0.9,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "st": "WA",
+            "lat": -25.5,
+            "lon": 122.3
+          },
+          {
+            "st": "NT",
+            "lat": -19.4,
+            "lon": 133.4
+          },
+          {
+            "st": "SA",
+            "lat": -30,
+            "lon": 135.8
+          },
+          {
+            "st": "QLD",
+            "lat": -22.5,
+            "lon": 144.4
+          },
+          {
+            "st": "NSW",
+            "lat": -31.5,
+            "lon": 146.8
+          },
+          {
+            "st": "VIC",
+            "lat": -37.4,
+            "lon": 141
+          },
+          {
+            "st": "TAS",
+            "lat": -44.3,
+            "lon": 146.6
+          },
+          {
+            "st": "ACT",
+            "lat": -35.3,
+            "lon": 151.8
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "fill": "#2A3A2A"
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "st",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -27.7,
+            "lon": 122.3
+          },
+          {
+            "lat": -29.9,
+            "lon": 122.3
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#3A4D6B",
+        "strokeWidth": 1,
+        "opacity": 0.55
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -30.8,
+            "lon": 122.3,
+            "t": "45% of all protected land"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "fill": "#3A4D6B"
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ]
+}

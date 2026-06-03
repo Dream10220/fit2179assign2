@@ -1,0 +1,575 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 880,
+  "height": 470,
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 34,
+        "outerRadius": 46,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.15666666666666668
+          },
+          {
+            "v": 0.8433333333333333
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 34,
+        "outerRadius": 46,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.15666666666666668",
+            "value": "#9FC6B8"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "QLD: 9.4% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 50,
+        "outerRadius": 63,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.17333333333333334
+          },
+          {
+            "v": 0.8266666666666667
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 50,
+        "outerRadius": 63,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.17333333333333334",
+            "value": "#7CBFB0"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "NSW: 10.4% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 68,
+        "outerRadius": 82,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.295
+          },
+          {
+            "v": 0.7050000000000001
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 68,
+        "outerRadius": 82,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.295",
+            "value": "#5DB89D"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "VIC: 17.7% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 88,
+        "outerRadius": 103,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.41000000000000003
+          },
+          {
+            "v": 0.59
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 88,
+        "outerRadius": 103,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.41000000000000003",
+            "value": "#48A88E"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "NT: 24.6% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 110,
+        "outerRadius": 127,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.5066666666666666
+          },
+          {
+            "v": 0.4933333333333334
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 110,
+        "outerRadius": 127,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.5066666666666666",
+            "value": "#3E9E86"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "SA: 30.4% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 135,
+        "outerRadius": 154,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.5183333333333333
+          },
+          {
+            "v": 0.4816666666666667
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 135,
+        "outerRadius": 154,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.5183333333333333",
+            "value": "#2D8A7A"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "WA: 31.1% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 163,
+        "outerRadius": 185,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.7133333333333333
+          },
+          {
+            "v": 0.28666666666666674
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 163,
+        "outerRadius": 185,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.7133333333333333",
+            "value": "#1A6B5E"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "TAS: 42.8% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          },
+          {
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 195,
+        "outerRadius": 220,
+        "color": "#ECE6DA",
+        "cornerRadius": 6
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 0.9316666666666666
+          },
+          {
+            "v": 0.06833333333333336
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 195,
+        "outerRadius": 220,
+        "cornerRadius": 6,
+        "theta": 0
+      },
+      "encoding": {
+        "theta": {
+          "field": "v",
+          "type": "quantitative",
+          "stack": true
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v==0.9316666666666666",
+            "value": "#0D4D42"
+          },
+          "value": "transparent"
+        },
+        "tooltip": {
+          "value": "ACT: 55.9% protected (target 30%)"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": 1
+          }
+        ]
+      },
+      "mark": {
+        "type": "arc",
+        "innerRadius": 32,
+        "outerRadius": 222,
+        "theta": 3.1355926535897933,
+        "theta2": 3.147592653589793,
+        "color": "#5C4F3D"
+      },
+      "encoding": {}
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "t": "← 30% target",
+            "y": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 700,
+        "color": "#5C4F3D",
+        "radius": 238,
+        "theta": 3.18,
+        "align": "left",
+        "dx": 4
+      },
+      "encoding": {
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        },
+        "theta": {
+          "value": 3.18
+        },
+        "radius": {
+          "value": 238
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "t": "start = 0%",
+            "y": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontStyle": "italic",
+        "color": "#9A8A78"
+      },
+      "encoding": {
+        "text": {
+          "field": "t",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

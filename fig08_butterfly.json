@@ -1,0 +1,152 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 880,
+  "height": 300,
+  "data": {
+    "values": [
+      {
+        "cat": "Vulnerable",
+        "period": "2000–2012",
+        "count": 31
+      },
+      {
+        "cat": "Vulnerable",
+        "period": "2013–2025",
+        "count": 34
+      },
+      {
+        "cat": "Endangered",
+        "period": "2000–2012",
+        "count": 126
+      },
+      {
+        "cat": "Endangered",
+        "period": "2013–2025",
+        "count": 137
+      },
+      {
+        "cat": "Critically Endangered",
+        "period": "2000–2012",
+        "count": 130
+      },
+      {
+        "cat": "Critically Endangered",
+        "period": "2013–2025",
+        "count": 291
+      },
+      {
+        "cat": "Extinct",
+        "period": "2000–2012",
+        "count": 7
+      },
+      {
+        "cat": "Extinct",
+        "period": "2013–2025",
+        "count": 7
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.period=='2000–2012' ? -datum.count : datum.count",
+      "as": "value"
+    },
+    {
+      "calculate": "abs(datum.value)",
+      "as": "abs_val"
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {
+          "filter": "datum.value < 0"
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopLeft": 4,
+        "cornerRadiusBottomLeft": 4,
+        "stroke": "#FAFBF8",
+        "strokeWidth": 0.8
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.value >= 0"
+        }
+      ],
+      "mark": {
+        "type": "bar",
+        "cornerRadiusTopRight": 4,
+        "cornerRadiusBottomRight": 4,
+        "stroke": "#FAFBF8",
+        "strokeWidth": 0.8
+      }
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "cat",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "Critically Endangered",
+        "Endangered",
+        "Vulnerable",
+        "Extinct"
+      ]
+    },
+    "x": {
+      "field": "value",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          -300,
+          300
+        ]
+      },
+      "title": "← 2000–2012    Added    2013–2025 →",
+      "axis": {
+        "labelExpr": "abs(datum.value)"
+      }
+    },
+    "color": {
+      "field": "period",
+      "type": "ordinal",
+      "title": "Period",
+      "scale": {
+        "domain": [
+          "2000–2012",
+          "2013–2025"
+        ],
+        "range": [
+          "#A8D0C6",
+          "#0D3D38"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "direction": "horizontal",
+        "title": "Period",
+        "titleFontSize": 12,
+        "labelFontSize": 12,
+        "symbolType": "square",
+        "offset": 8
+      }
+    },
+    "tooltip": [
+      {
+        "field": "cat"
+      },
+      {
+        "field": "period"
+      },
+      {
+        "field": "abs_val",
+        "title": "Count"
+      }
+    ]
+  }
+}

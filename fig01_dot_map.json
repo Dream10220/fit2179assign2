@@ -1,0 +1,7345 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "height": 520,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "padding": {
+    "left": 15,
+    "right": 20,
+    "top": 5,
+    "bottom": 5
+  },
+  "projection": {
+    "type": "conicEqualArea",
+    "rotate": [
+      -134,
+      0
+    ],
+    "center": [
+      0,
+      -29
+    ],
+    "parallels": [
+      -18,
+      -36
+    ],
+    "scale": 700
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#E8E2D6",
+        "stroke": "#C4BBA9",
+        "strokeWidth": 0.6
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#C4BBA9",
+        "strokeWidth": 0.6
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -29.175,
+            "lon": 151.003,
+            "group": "Plants",
+            "name": "Sannantha whitei"
+          },
+          {
+            "lat": -12.249,
+            "lon": 136.881,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -25.064,
+            "lon": 128.902,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -33.78,
+            "lon": 151.25,
+            "group": "Plants",
+            "name": "Seaforth Mintbush"
+          },
+          {
+            "lat": -34.6,
+            "lon": 138.9,
+            "group": "Plants",
+            "name": "Two-bristle Greenhood"
+          },
+          {
+            "lat": -35.24,
+            "lon": 149.08,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -36.698,
+            "lon": 149.94,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -28.383,
+            "lon": 153.283,
+            "group": "Amphibians",
+            "name": "Mount Wollumbin Hip-pocket Frog"
+          },
+          {
+            "lat": -34.9,
+            "lon": 118.2,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -38.39,
+            "lon": 141.64,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -37.95,
+            "lon": 142.99,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -36.9,
+            "lon": 140.8,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -32.1,
+            "lon": 116,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -29.121,
+            "lon": 152.423,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -18.033,
+            "lon": 145.583,
+            "group": "Invertebrates",
+            "name": "Cardwell Hairy Crayfish"
+          },
+          {
+            "lat": -34.475,
+            "lon": 150.784,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -31.5,
+            "lon": 117.9,
+            "group": "Plants",
+            "name": "Native Foxglove"
+          },
+          {
+            "lat": -32.317,
+            "lon": 136.076,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -12.27,
+            "lon": 132.398,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -19.08,
+            "lon": 146.474,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -14.8,
+            "lon": 125.9,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -33.3,
+            "lon": 115.8,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -29.313,
+            "lon": 152.405,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -37.82,
+            "lon": 145.15,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -34.73,
+            "lon": 142.35,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.76,
+            "lon": 150.73,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -27.955,
+            "lon": 153.421,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.059,
+            "lon": 142.776,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -37.963,
+            "lon": 144.409,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -37.361,
+            "lon": 146.84,
+            "group": "Plants",
+            "name": "Stringybark Tea-tree"
+          },
+          {
+            "lat": -12.932,
+            "lon": 130.256,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -28.603,
+            "lon": 148.984,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -30.182,
+            "lon": 152.986,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -30.889,
+            "lon": 153.017,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -15.649,
+            "lon": 130.481,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -12.2,
+            "lon": 136.709,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -35.73,
+            "lon": 147.23,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -40.452,
+            "lon": 144.909,
+            "group": "Plants",
+            "name": "Three Hummock Leekorchid"
+          },
+          {
+            "lat": -20.2,
+            "lon": 118.9,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.8,
+            "lon": 121.9,
+            "group": "Plants",
+            "name": "Feather-leaved Banksia"
+          },
+          {
+            "lat": -39.789,
+            "lon": 147.861,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -30.1,
+            "lon": 115.5,
+            "group": "Plants",
+            "name": "Northern Serrate Dryandra"
+          },
+          {
+            "lat": -26.584,
+            "lon": 152.403,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -32.17,
+            "lon": 151.711,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -34.862,
+            "lon": 150.747,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -27.7,
+            "lon": 152.9,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -23.041,
+            "lon": 118.851,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -34.652,
+            "lon": 138.453,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.896,
+            "lon": 142.45,
+            "group": "Plants",
+            "name": "Wimmera Bottlebrush"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.4,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.8,
+            "lon": 150.6,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -28.2,
+            "lon": 153.3,
+            "group": "Invertebrates",
+            "name": "Euastacus maidae"
+          },
+          {
+            "lat": -25.183,
+            "lon": 150.183,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -37.915,
+            "lon": 147.585,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -31.7,
+            "lon": 116,
+            "group": "Reptiles",
+            "name": "Western Swamp Turtle"
+          },
+          {
+            "lat": -17.603,
+            "lon": 145.619,
+            "group": "Amphibians",
+            "name": "Nyakala Frog"
+          },
+          {
+            "lat": -12.35,
+            "lon": 131.78,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -15.467,
+            "lon": 141.75,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -29.122,
+            "lon": 153.426,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -27.402,
+            "lon": 152.795,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -30,
+            "lon": 115.3,
+            "group": "Plants",
+            "name": "Tetratheca nephelioides"
+          },
+          {
+            "lat": -31.954,
+            "lon": 152.595,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -30.15,
+            "lon": 152.37,
+            "group": "Plants",
+            "name": "Callitris oblonga"
+          },
+          {
+            "lat": -33.998,
+            "lon": 151.249,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -27.9,
+            "lon": 152.3,
+            "group": "Invertebrates",
+            "name": "Jagara Hairy Crayfish"
+          },
+          {
+            "lat": -41.63,
+            "lon": 147.716,
+            "group": "Plants",
+            "name": "Ben Lomond Leekorchid"
+          },
+          {
+            "lat": -34.82,
+            "lon": 149.812,
+            "group": "Plants",
+            "name": "Delicate Pomaderris"
+          },
+          {
+            "lat": -33.9,
+            "lon": 115.1,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -35.48,
+            "lon": 149.995,
+            "group": "Plants",
+            "name": "Budawangs Wallaby Grass"
+          },
+          {
+            "lat": -43.4,
+            "lon": 146.1,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -35.333,
+            "lon": 146.5,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -25.2,
+            "lon": 131,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -34.4,
+            "lon": 116.3,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -24.968,
+            "lon": 152.108,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -28.529,
+            "lon": 151.949,
+            "group": "Plants",
+            "name": "Black Grevillea"
+          },
+          {
+            "lat": -25.1,
+            "lon": 152.5,
+            "group": "Reptiles",
+            "name": "Mary River Turtle"
+          },
+          {
+            "lat": -37.4,
+            "lon": 146.75,
+            "group": "Fish",
+            "name": "Shaw Galaxias"
+          },
+          {
+            "lat": -37.797,
+            "lon": 144.96,
+            "group": "Plants",
+            "name": "Wollemi Pine"
+          },
+          {
+            "lat": -43.259,
+            "lon": 147.261,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -17.8,
+            "lon": 124.6,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -22.445,
+            "lon": 132.637,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -27.982,
+            "lon": 148.618,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -36.45,
+            "lon": 149.65,
+            "group": "Plants",
+            "name": "Blay's Wattle"
+          },
+          {
+            "lat": -14.034,
+            "lon": 131.943,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -37.8,
+            "lon": 141,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -25.021,
+            "lon": 150.117,
+            "group": "Invertebrates",
+            "name": "Boggomoss Snail"
+          },
+          {
+            "lat": -37.93,
+            "lon": 141.3,
+            "group": "Invertebrates",
+            "name": "The Glenelg River Corrugated Mussel"
+          },
+          {
+            "lat": -24.285,
+            "lon": 151.216,
+            "group": "Plants",
+            "name": "Narrow-leaved Malletwood"
+          },
+          {
+            "lat": -17.3,
+            "lon": 145.8,
+            "group": "Amphibians",
+            "name": "Neglected Frog"
+          },
+          {
+            "lat": -20.85,
+            "lon": 148.667,
+            "group": "Amphibians",
+            "name": "Nyakala Frog"
+          },
+          {
+            "lat": -35,
+            "lon": 118.2,
+            "group": "Mammals",
+            "name": "Gilbert's Potoroo"
+          },
+          {
+            "lat": -32.8,
+            "lon": 116.5,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -36.83,
+            "lon": 147.49,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -35.6,
+            "lon": 148.4,
+            "group": "Amphibians",
+            "name": "Northern Corroboree Frog"
+          },
+          {
+            "lat": -28.35,
+            "lon": 125.8,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -28.567,
+            "lon": 122.217,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -34.507,
+            "lon": 138.308,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -41.45,
+            "lon": 146.617,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -27.423,
+            "lon": 152.459,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -37.825,
+            "lon": 144.536,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -41.172,
+            "lon": 144.695,
+            "group": "Plants",
+            "name": "Western Leekorchid"
+          },
+          {
+            "lat": -35.117,
+            "lon": 139.283,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -37.472,
+            "lon": 149.59,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -35.885,
+            "lon": 137.565,
+            "group": "Plants",
+            "name": "Beyeria Bush-pea"
+          },
+          {
+            "lat": -35.5,
+            "lon": 149.9,
+            "group": "Plants",
+            "name": "Mongarlowe Mallee"
+          },
+          {
+            "lat": -15.715,
+            "lon": 136.612,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -33.1,
+            "lon": 151.623,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -43.183,
+            "lon": 147.85,
+            "group": "Plants",
+            "name": "Chestnut Leekorchid"
+          },
+          {
+            "lat": -34.66,
+            "lon": 145.26,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -12.854,
+            "lon": 131.59,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -35.954,
+            "lon": 146.523,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -41.86,
+            "lon": 148.15,
+            "group": "Plants",
+            "name": "Bordered Heath"
+          },
+          {
+            "lat": -30.282,
+            "lon": 153.134,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -35.3,
+            "lon": 150.1,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -28.215,
+            "lon": 148.905,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -26.3,
+            "lon": 152.7,
+            "group": "Reptiles",
+            "name": "Mary River Turtle"
+          },
+          {
+            "lat": -30.229,
+            "lon": 152.921,
+            "group": "Invertebrates",
+            "name": "Euastacus morgani"
+          },
+          {
+            "lat": -36.97,
+            "lon": 147.31,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -42.651,
+            "lon": 148.048,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -16.02,
+            "lon": 133.414,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -36.206,
+            "lon": 144.226,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -32.3,
+            "lon": 150.3,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -31.537,
+            "lon": 152.736,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -37.931,
+            "lon": 143.145,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -33.9,
+            "lon": 115.7,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -32.8,
+            "lon": 116.9,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -32.2,
+            "lon": 126.3,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -18,
+            "lon": 122.2,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -19.347,
+            "lon": 146.786,
+            "group": "Plants",
+            "name": "Backhousia tetraptera"
+          },
+          {
+            "lat": -32.703,
+            "lon": 137.839,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -30.3,
+            "lon": 116.6,
+            "group": "Plants",
+            "name": "Broadfruited Haloragis"
+          },
+          {
+            "lat": -14.35,
+            "lon": 131.55,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -42.101,
+            "lon": 148.283,
+            "group": "Plants",
+            "name": "Firth's Midgeorchid"
+          },
+          {
+            "lat": -12.412,
+            "lon": 130.837,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -27.488,
+            "lon": 153.135,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -33.315,
+            "lon": 146.38,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -38.749,
+            "lon": 143.751,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -34.91,
+            "lon": 149.75,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -31.716,
+            "lon": 140.543,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -33.062,
+            "lon": 151.326,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -24.167,
+            "lon": 120.267,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -34.1,
+            "lon": 116.1,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -32.4,
+            "lon": 150,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -33.51,
+            "lon": 143.825,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -30.204,
+            "lon": 151.568,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -37.473,
+            "lon": 145.27,
+            "group": "Plants",
+            "name": "Round-leaf Pomaderris"
+          },
+          {
+            "lat": -41.8,
+            "lon": 148.233,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -28.05,
+            "lon": 152.382,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -31.641,
+            "lon": 152.826,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -17.292,
+            "lon": 140.908,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -40.783,
+            "lon": 145.033,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -19.5,
+            "lon": 147,
+            "group": "Amphibians",
+            "name": "Mcdonald's Frog"
+          },
+          {
+            "lat": -35,
+            "lon": 138.7,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -26.526,
+            "lon": 152.565,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -41.345,
+            "lon": 147.056,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -17.439,
+            "lon": 145.227,
+            "group": "Plants",
+            "name": "Purpleflowered Wattle"
+          },
+          {
+            "lat": -35.62,
+            "lon": 149.26,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -36.561,
+            "lon": 143.757,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -17.3,
+            "lon": 128.3,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -14.13,
+            "lon": 132.392,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -43.03,
+            "lon": 147.3,
+            "group": "Invertebrates",
+            "name": "Patiriella littoralis"
+          },
+          {
+            "lat": -37.58,
+            "lon": 140.08,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.8,
+            "lon": 148.2,
+            "group": "Plants",
+            "name": "Kelton's Leek Orchid"
+          },
+          {
+            "lat": -43.306,
+            "lon": 146.989,
+            "group": "Invertebrates",
+            "name": "Southern Sandstone Cave Cricket"
+          },
+          {
+            "lat": -13.529,
+            "lon": 132.931,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -18.53,
+            "lon": 146.334,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.054,
+            "lon": 148.077,
+            "group": "Plants",
+            "name": "Stringybark Tea-tree"
+          },
+          {
+            "lat": -26.407,
+            "lon": 135.52,
+            "group": "Fish",
+            "name": "Dalhousie Hardyhead"
+          },
+          {
+            "lat": -33.41,
+            "lon": 151.284,
+            "group": "Invertebrates",
+            "name": "Euastacus dalagarbe"
+          },
+          {
+            "lat": -25.948,
+            "lon": 151.754,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -33.48,
+            "lon": 135.9,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -38.19,
+            "lon": 145.08,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -38.008,
+            "lon": 144.562,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -28.725,
+            "lon": 150.84,
+            "group": "Plants",
+            "name": "Homoranthus bebo"
+          },
+          {
+            "lat": -37.097,
+            "lon": 141.374,
+            "group": "Plants",
+            "name": "Avenue Cassinia"
+          },
+          {
+            "lat": -34.892,
+            "lon": 135.855,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -27.403,
+            "lon": 130.078,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -36.37,
+            "lon": 150.08,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -17.5,
+            "lon": 126.1,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -36.241,
+            "lon": 146.106,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -29.9,
+            "lon": 116.9,
+            "group": "Plants",
+            "name": "Acacia leptoneura"
+          },
+          {
+            "lat": -28.024,
+            "lon": 153.033,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -35.75,
+            "lon": 137.75,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.14,
+            "lon": 142.606,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -34.3,
+            "lon": 115.3,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -28.178,
+            "lon": 153.535,
+            "group": "Plants",
+            "name": "Smooth Scrub Turpentine"
+          },
+          {
+            "lat": -27.75,
+            "lon": 153.41,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -27.12,
+            "lon": 119.293,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -12.28,
+            "lon": 141.97,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -27.398,
+            "lon": 120.682,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -20.655,
+            "lon": 141.811,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -28.8,
+            "lon": 115.7,
+            "group": "Plants",
+            "name": "Native Foxglove"
+          },
+          {
+            "lat": -29.381,
+            "lon": 153.345,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -16.7,
+            "lon": 122.8,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.3,
+            "group": "Plants",
+            "name": "Largeflowered Shortstyled Grevillea"
+          },
+          {
+            "lat": -37.62,
+            "lon": 140.535,
+            "group": "Plants",
+            "name": "Plum Sun-orchid"
+          },
+          {
+            "lat": -36,
+            "lon": 139.58,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -16.683,
+            "lon": 133.417,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -20.9,
+            "lon": 115.3,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.25,
+            "lon": 144.5,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -35.741,
+            "lon": 143.879,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.8,
+            "lon": 118.1,
+            "group": "Plants",
+            "name": "Queen Of Sheba"
+          },
+          {
+            "lat": -37.642,
+            "lon": 145.723,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -23.267,
+            "lon": 131.367,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -30.87,
+            "lon": 153.008,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -34.051,
+            "lon": 137.565,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -14.8,
+            "lon": 125.8,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -33.4,
+            "lon": 151,
+            "group": "Plants",
+            "name": "Julian's Hibbertia"
+          },
+          {
+            "lat": -34.5,
+            "lon": 148.7,
+            "group": "Plants",
+            "name": "Tarengo Leek Orchid"
+          },
+          {
+            "lat": -19.486,
+            "lon": 147.448,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -35.4,
+            "lon": 148.9,
+            "group": "Plants",
+            "name": "Ectopic Midgeorchid"
+          },
+          {
+            "lat": -41.605,
+            "lon": 146.786,
+            "group": "Plants",
+            "name": "Ben Lomond Leekorchid"
+          },
+          {
+            "lat": -34.4,
+            "lon": 116,
+            "group": "Plants",
+            "name": "Manyflowered Commersonia"
+          },
+          {
+            "lat": -37.083,
+            "lon": 149.417,
+            "group": "Plants",
+            "name": "Nalbaugh Nematolepis"
+          },
+          {
+            "lat": -10.637,
+            "lon": 142.146,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -23.559,
+            "lon": 150.974,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.6,
+            "lon": 123.4,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -28.254,
+            "lon": 152.565,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -22.404,
+            "lon": 150.295,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -32.1,
+            "lon": 116,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.41,
+            "lon": 148.306,
+            "group": "Fish",
+            "name": "Kosciuszko Galaxias"
+          },
+          {
+            "lat": -13.49,
+            "lon": 130.37,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -33.175,
+            "lon": 138.374,
+            "group": "Plants",
+            "name": "Spiny Everlasting"
+          },
+          {
+            "lat": -37.24,
+            "lon": 150.035,
+            "group": "Plants",
+            "name": "Narrabarba Wattle"
+          },
+          {
+            "lat": -30.4,
+            "lon": 152.7,
+            "group": "Reptiles",
+            "name": "Georges Helmeted Turtle"
+          },
+          {
+            "lat": -27.781,
+            "lon": 134.786,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -36.1,
+            "lon": 148.2,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -13.422,
+            "lon": 132.104,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -30.922,
+            "lon": 151.855,
+            "group": "Plants",
+            "name": "Leionema westonii"
+          },
+          {
+            "lat": -32.883,
+            "lon": 151.79,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -24.162,
+            "lon": 151.876,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -35.071,
+            "lon": 149.244,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -33.9,
+            "lon": 120.1,
+            "group": "Plants",
+            "name": "Stirling Range Beard Heath"
+          },
+          {
+            "lat": -16.305,
+            "lon": 133.483,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -26.597,
+            "lon": 153.016,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -35.3,
+            "lon": 138.5,
+            "group": "Plants",
+            "name": "Copper Beard-orchid"
+          },
+          {
+            "lat": -34.8,
+            "lon": 137.5,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -32.97,
+            "lon": 151.729,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -35.732,
+            "lon": 149.268,
+            "group": "Plants",
+            "name": "Wadbilliga Ash"
+          },
+          {
+            "lat": -29.9,
+            "lon": 115.2,
+            "group": "Plants",
+            "name": "Eremophila subangustifolia"
+          },
+          {
+            "lat": -30.58,
+            "lon": 151.715,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -36.82,
+            "lon": 140.415,
+            "group": "Plants",
+            "name": "Avenue Cassinia"
+          },
+          {
+            "lat": -15.106,
+            "lon": 130.323,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -34.3,
+            "lon": 115.2,
+            "group": "Plants",
+            "name": "Lodge's Spider Orchid"
+          },
+          {
+            "lat": -37.18,
+            "lon": 146.53,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -34.433,
+            "lon": 142.315,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.9,
+            "lon": 118.2,
+            "group": "Plants",
+            "name": "Broad-leaf Daviesia"
+          },
+          {
+            "lat": -32.75,
+            "lon": 152.083,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.83,
+            "lon": 147.13,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -33.767,
+            "lon": 150.822,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -43.45,
+            "lon": 147.167,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -36.867,
+            "lon": 141.51,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -37.138,
+            "lon": 144.139,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -15.914,
+            "lon": 136.829,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.9,
+            "lon": 117.7,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -35.915,
+            "lon": 141.918,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -20.037,
+            "lon": 148.28,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.18,
+            "lon": 143.38,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -22.5,
+            "lon": 129.117,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -38.13,
+            "lon": 141.63,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -38.07,
+            "lon": 141.28,
+            "group": "Invertebrates",
+            "name": "The Glenelg River Corrugated Mussel"
+          },
+          {
+            "lat": -34.84,
+            "lon": 138.825,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -28.291,
+            "lon": 140.445,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -38,
+            "lon": 140.8,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -40.768,
+            "lon": 148.04,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -29.167,
+            "lon": 134.258,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -35.267,
+            "lon": 147.117,
+            "group": "Plants",
+            "name": "Eucalyptus scopulorum"
+          },
+          {
+            "lat": -13.135,
+            "lon": 130.117,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.286,
+            "lon": 144.393,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -36.115,
+            "lon": 146.638,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -17.483,
+            "lon": 140.833,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -17.633,
+            "lon": 139.94,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.7,
+            "lon": 140.2,
+            "group": "Birds",
+            "name": "Mukarrthippi Grasswren"
+          },
+          {
+            "lat": -35.1,
+            "lon": 148.6,
+            "group": "Amphibians",
+            "name": "Northern Corroboree Frog"
+          },
+          {
+            "lat": -12.794,
+            "lon": 143.052,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -14.167,
+            "lon": 136.414,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.782,
+            "lon": 145.141,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.1,
+            "lon": 149.1,
+            "group": "Plants",
+            "name": "Duramana Fingers"
+          },
+          {
+            "lat": -33.417,
+            "lon": 149.583,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -43.1,
+            "lon": 147.3,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -35.909,
+            "lon": 148.561,
+            "group": "Plants",
+            "name": "Pimelea bracteata"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.4,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -33.355,
+            "lon": 151.346,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -15.635,
+            "lon": 129.624,
+            "group": "Mammals",
+            "name": "Nabarlek (victoria River District)"
+          },
+          {
+            "lat": -36.986,
+            "lon": 143.866,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -29.767,
+            "lon": 151.117,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -29.3,
+            "lon": 153,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -32.8,
+            "lon": 115.6,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.472,
+            "lon": 144.287,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -16.17,
+            "lon": 145.413,
+            "group": "Fish",
+            "name": "Daintree Rainbowfish"
+          },
+          {
+            "lat": -20.05,
+            "lon": 148.88,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.329,
+            "lon": 147.032,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -35.699,
+            "lon": 139.161,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.623,
+            "lon": 150.661,
+            "group": "Plants",
+            "name": "Carrington Falls Grevillea"
+          },
+          {
+            "lat": -35.08,
+            "lon": 144.89,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -32.971,
+            "lon": 137.599,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -25.846,
+            "lon": 148.569,
+            "group": "Invertebrates",
+            "name": "Boggomoss Snail"
+          },
+          {
+            "lat": -37.2,
+            "lon": 139.8,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -35.696,
+            "lon": 136.91,
+            "group": "Invertebrates",
+            "name": "Kangaroo Island Assassin Spider"
+          },
+          {
+            "lat": -41.296,
+            "lon": 148.112,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -38.04,
+            "lon": 146.47,
+            "group": "Fish",
+            "name": "West Gippsland Galaxias"
+          },
+          {
+            "lat": -29.2,
+            "lon": 151.7,
+            "group": "Plants",
+            "name": "Tenterfield Mint-bush"
+          },
+          {
+            "lat": -42.306,
+            "lon": 146.433,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -35.3,
+            "lon": 138.4,
+            "group": "Plants",
+            "name": "Copper Beard-orchid"
+          },
+          {
+            "lat": -27.25,
+            "lon": 151.9,
+            "group": "Plants",
+            "name": "Cooneana Olive"
+          },
+          {
+            "lat": -34.4,
+            "lon": 118.3,
+            "group": "Plants",
+            "name": "Giant Andersonia"
+          },
+          {
+            "lat": -25.617,
+            "lon": 151.617,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -35,
+            "lon": 117.5,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -31.339,
+            "lon": 140.266,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.4,
+            "group": "Plants",
+            "name": "Largeflowered Shortstyled Grevillea"
+          },
+          {
+            "lat": -12.6,
+            "lon": 132.427,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -37.832,
+            "lon": 145.001,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -30.45,
+            "lon": 151.833,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -32.8,
+            "lon": 151.3,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -28.2,
+            "lon": 114.2,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -22.816,
+            "lon": 150.809,
+            "group": "Plants",
+            "name": "Headland Commersonia"
+          },
+          {
+            "lat": -28.592,
+            "lon": 153.464,
+            "group": "Invertebrates",
+            "name": "Mitchell's Rainforest Snail"
+          },
+          {
+            "lat": -28.6,
+            "lon": 115.6,
+            "group": "Plants",
+            "name": "Native Foxglove"
+          },
+          {
+            "lat": -42.874,
+            "lon": 147.367,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -17.3,
+            "lon": 128.7,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -34.473,
+            "lon": 145.07,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -35.037,
+            "lon": 150.671,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -41.933,
+            "lon": 147.5,
+            "group": "Plants",
+            "name": "Golfers Leekorchid"
+          },
+          {
+            "lat": -36.89,
+            "lon": 140.97,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -36.55,
+            "lon": 145.98,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -32.379,
+            "lon": 150.664,
+            "group": "Plants",
+            "name": "Denman Pomaderris"
+          },
+          {
+            "lat": -37.64,
+            "lon": 146.08,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -29.898,
+            "lon": 153.126,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -32.177,
+            "lon": 152.489,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -25.051,
+            "lon": 152.099,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -12.628,
+            "lon": 141.876,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34.4,
+            "lon": 118.1,
+            "group": "Plants",
+            "name": "Hibbertia barrettiae"
+          },
+          {
+            "lat": -39.814,
+            "lon": 144.104,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -38.841,
+            "lon": 146.158,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.4,
+            "lon": 140,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -33.4,
+            "lon": 115.7,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.73,
+            "lon": 135.87,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -34.63,
+            "lon": 143.95,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -25.76,
+            "lon": 152.946,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -16.9,
+            "lon": 145.8,
+            "group": "Amphibians",
+            "name": "Kuranda Tree Frog"
+          },
+          {
+            "lat": -12.229,
+            "lon": 133.051,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -19.761,
+            "lon": 147.604,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -20.499,
+            "lon": 122.501,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -31.642,
+            "lon": 152.227,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -41.1,
+            "lon": 145.8,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -12.535,
+            "lon": 130.881,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.748,
+            "lon": 148.918,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.633,
+            "lon": 150.467,
+            "group": "Invertebrates",
+            "name": "Fitzroy Falls Spiny Crayfish"
+          },
+          {
+            "lat": -34.218,
+            "lon": 150.867,
+            "group": "Plants",
+            "name": "Eucalyptus Cattai"
+          },
+          {
+            "lat": -18.208,
+            "lon": 145.808,
+            "group": "Amphibians",
+            "name": "Nyakala Frog"
+          },
+          {
+            "lat": -13.774,
+            "lon": 129.793,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -32,
+            "lon": 115.9,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -28.632,
+            "lon": 153.58,
+            "group": "Invertebrates",
+            "name": "Mitchell's Rainforest Snail"
+          },
+          {
+            "lat": -26.564,
+            "lon": 152.548,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -35.4,
+            "lon": 148.22,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -33.699,
+            "lon": 136.926,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -29.276,
+            "lon": 152.489,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -30.012,
+            "lon": 151.95,
+            "group": "Plants",
+            "name": "Callitris oblonga"
+          },
+          {
+            "lat": -38.35,
+            "lon": 145.76,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -38.39,
+            "lon": 142.24,
+            "group": "Invertebrates",
+            "name": "The Glenelg River Corrugated Mussel"
+          },
+          {
+            "lat": -12.739,
+            "lon": 131.46,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -43.3,
+            "lon": 146.9,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -38.33,
+            "lon": 141.5,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -29.888,
+            "lon": 133.589,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -42.034,
+            "lon": 147.585,
+            "group": "Plants",
+            "name": "Blacktipped Spiderorchid"
+          },
+          {
+            "lat": -36.62,
+            "lon": 143.752,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -13.5,
+            "lon": 130.376,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -42.344,
+            "lon": 145.338,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -37.055,
+            "lon": 149.912,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -31.9,
+            "lon": 116.2,
+            "group": "Plants",
+            "name": "Queen Of Sheba"
+          },
+          {
+            "lat": -33.6,
+            "lon": 123.3,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -34.8,
+            "lon": 117.3,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -26.447,
+            "lon": 118.969,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -43.442,
+            "lon": 147.183,
+            "group": "Plants",
+            "name": "Chestnut Leekorchid"
+          },
+          {
+            "lat": -37.009,
+            "lon": 142.719,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -37.784,
+            "lon": 144.95,
+            "group": "Invertebrates",
+            "name": "Lord Howe Island Stick-insect"
+          },
+          {
+            "lat": -37.9,
+            "lon": 140.4,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -35.102,
+            "lon": 150.319,
+            "group": "Invertebrates",
+            "name": "Fitzroy Falls Spiny Crayfish"
+          },
+          {
+            "lat": -23.915,
+            "lon": 120.583,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -29.27,
+            "lon": 153.3,
+            "group": "Plants",
+            "name": "Swamp Mint-bush"
+          },
+          {
+            "lat": -41.221,
+            "lon": 146.771,
+            "group": "Plants",
+            "name": "Shy Susan"
+          },
+          {
+            "lat": -37.58,
+            "lon": 148.75,
+            "group": "Fish",
+            "name": "East Gippsland Galaxias"
+          },
+          {
+            "lat": -24.4,
+            "lon": 151,
+            "group": "Amphibians",
+            "name": "Kroombit Treefrog"
+          },
+          {
+            "lat": -33.757,
+            "lon": 150.67,
+            "group": "Plants",
+            "name": "Camden White Gum"
+          },
+          {
+            "lat": -35.733,
+            "lon": 144.9,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.1,
+            "lon": 148.7,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -36.618,
+            "lon": 143.584,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -33.1,
+            "lon": 148.4,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -38.029,
+            "lon": 144.16,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -33.625,
+            "lon": 150.943,
+            "group": "Plants",
+            "name": "Eucalyptus Cattai"
+          },
+          {
+            "lat": -38.027,
+            "lon": 144.045,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -41.156,
+            "lon": 146.133,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -36.935,
+            "lon": 145.149,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -43.136,
+            "lon": 147.855,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -38.215,
+            "lon": 141.31,
+            "group": "Plants",
+            "name": "Coast Leek-orchid"
+          },
+          {
+            "lat": -25.8,
+            "lon": 152.7,
+            "group": "Reptiles",
+            "name": "Mary River Turtle"
+          },
+          {
+            "lat": -13.855,
+            "lon": 136.813,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -13.683,
+            "lon": 130.583,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -33.1,
+            "lon": 150.3,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -27.8,
+            "lon": 152.2,
+            "group": "Invertebrates",
+            "name": "Jagara Hairy Crayfish"
+          },
+          {
+            "lat": -34.1,
+            "lon": 116.5,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -23.091,
+            "lon": 118.814,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -20.6,
+            "lon": 117.1,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -31.9,
+            "lon": 115.8,
+            "group": "Birds",
+            "name": "Western Ground Parrot"
+          },
+          {
+            "lat": -17.3,
+            "lon": 123.7,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -36.974,
+            "lon": 144.719,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -24.95,
+            "lon": 150.083,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -36.288,
+            "lon": 149.551,
+            "group": "Fish",
+            "name": "Short-tail Galaxias"
+          },
+          {
+            "lat": -16.246,
+            "lon": 145.436,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.767,
+            "lon": 147.711,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -12.11,
+            "lon": 142.28,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -22.721,
+            "lon": 131.184,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -34,
+            "lon": 145,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -18.708,
+            "lon": 138.492,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -34.807,
+            "lon": 150.015,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -37.24,
+            "lon": 148.45,
+            "group": "Fish",
+            "name": "Mcdowall's Galaxias"
+          },
+          {
+            "lat": -17.3,
+            "lon": 145.217,
+            "group": "Plants",
+            "name": "Purpleflowered Wattle"
+          },
+          {
+            "lat": -37.675,
+            "lon": 146.531,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -37.67,
+            "lon": 142.43,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -37.607,
+            "lon": 146.226,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -28.458,
+            "lon": 153.294,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -12.107,
+            "lon": 131.295,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -28.167,
+            "lon": 153.55,
+            "group": "Invertebrates",
+            "name": "Mitchell's Rainforest Snail"
+          },
+          {
+            "lat": -36.667,
+            "lon": 144.476,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -26.2,
+            "lon": 152.7,
+            "group": "Invertebrates",
+            "name": "Australian Fritillary"
+          },
+          {
+            "lat": -19.317,
+            "lon": 138.333,
+            "group": "Invertebrates",
+            "name": "Advena phillipii"
+          },
+          {
+            "lat": -35.938,
+            "lon": 145.002,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.7,
+            "lon": 117.8,
+            "group": "Plants",
+            "name": "Lemon Spider Orchid"
+          },
+          {
+            "lat": -35.84,
+            "lon": 148.568,
+            "group": "Fish",
+            "name": "Stocky Galaxias"
+          },
+          {
+            "lat": -35.57,
+            "lon": 150.33,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -36.898,
+            "lon": 149.901,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.048,
+            "lon": 146.168,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -33.9,
+            "lon": 144.62,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -33.42,
+            "lon": 149.57,
+            "group": "Reptiles",
+            "name": "Bathurst Grassland Earless Dragon"
+          },
+          {
+            "lat": -17.4,
+            "lon": 124.9,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -32.431,
+            "lon": 152.52,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -23.868,
+            "lon": 151.278,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -29.842,
+            "lon": 151.175,
+            "group": "Plants",
+            "name": "Sannantha whitei"
+          },
+          {
+            "lat": -33.3,
+            "lon": 115.6,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -11.167,
+            "lon": 132.15,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -40.959,
+            "lon": 147.431,
+            "group": "Fish",
+            "name": "Red Handfish"
+          },
+          {
+            "lat": -35.27,
+            "lon": 149.591,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -22.615,
+            "lon": 148.251,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -15.278,
+            "lon": 128.281,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -37.944,
+            "lon": 145.439,
+            "group": "Plants",
+            "name": "White Starbush"
+          },
+          {
+            "lat": -13.85,
+            "lon": 136.383,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -33.3,
+            "lon": 151,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -34.6,
+            "lon": 117.4,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -15.415,
+            "lon": 145.051,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -37.1,
+            "lon": 140.9,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -14.75,
+            "lon": 135.35,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34,
+            "lon": 142,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -28.199,
+            "lon": 153.514,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -17.3,
+            "lon": 123.6,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.846,
+            "lon": 145.492,
+            "group": "Birds",
+            "name": "Helmeted Honeyeater"
+          },
+          {
+            "lat": -17.4,
+            "lon": 145.8,
+            "group": "Amphibians",
+            "name": "Neglected Frog"
+          },
+          {
+            "lat": -32,
+            "lon": 115.5,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -11.96,
+            "lon": 141.91,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -26.236,
+            "lon": 152.726,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -18.3,
+            "lon": 122.2,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -15.549,
+            "lon": 136.284,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -31.9,
+            "lon": 116.1,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -23.25,
+            "lon": 150.75,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34.617,
+            "lon": 137.895,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -32.25,
+            "lon": 148.617,
+            "group": "Plants",
+            "name": "Ormeau Bottle Tree"
+          },
+          {
+            "lat": -29.069,
+            "lon": 151.92,
+            "group": "Plants",
+            "name": "Homoranthus bruhlii"
+          },
+          {
+            "lat": -34.915,
+            "lon": 138.606,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -42.75,
+            "lon": 147.58,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -35.3,
+            "lon": 149.4,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -34.1,
+            "lon": 118.4,
+            "group": "Plants",
+            "name": "Hibbertia priceana"
+          },
+          {
+            "lat": -38.41,
+            "lon": 142.25,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -16.101,
+            "lon": 145.453,
+            "group": "Fish",
+            "name": "Allen's Stiphodon"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.9,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -35.173,
+            "lon": 150.027,
+            "group": "Plants",
+            "name": "Callitris oblonga"
+          },
+          {
+            "lat": -22.6,
+            "lon": 150,
+            "group": "Birds",
+            "name": "Capricorn Yellow Chat"
+          },
+          {
+            "lat": -35.53,
+            "lon": 143.53,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -34.1,
+            "lon": 150.3,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -37.213,
+            "lon": 145.692,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -27.093,
+            "lon": 152.698,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -36.18,
+            "lon": 144.33,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -23.287,
+            "lon": 130.335,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -34.25,
+            "lon": 139.6,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -12.637,
+            "lon": 131.05,
+            "group": "Plants",
+            "name": "Atalaya"
+          },
+          {
+            "lat": -16.16,
+            "lon": 137.39,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -32,
+            "lon": 116.5,
+            "group": "Plants",
+            "name": "Orange Dryandra"
+          },
+          {
+            "lat": -34.111,
+            "lon": 141.904,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -42.5,
+            "lon": 147.4,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -23.65,
+            "lon": 150.467,
+            "group": "Plants",
+            "name": "Struck Oil Myrtle"
+          },
+          {
+            "lat": -34.6,
+            "lon": 118.2,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -35.171,
+            "lon": 149.455,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -36.046,
+            "lon": 147.91,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.4,
+            "lon": 118.8,
+            "group": "Plants",
+            "name": "Remote Thorny Lignum"
+          },
+          {
+            "lat": -29.283,
+            "lon": 151.683,
+            "group": "Plants",
+            "name": "Boronia inflexa"
+          },
+          {
+            "lat": -36.735,
+            "lon": 145.044,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -13.383,
+            "lon": 141.7,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -25.09,
+            "lon": 150.125,
+            "group": "Invertebrates",
+            "name": "Boggomoss Snail"
+          },
+          {
+            "lat": -24.2,
+            "lon": 151.1,
+            "group": "Amphibians",
+            "name": "Kroombit Treefrog"
+          },
+          {
+            "lat": -36.072,
+            "lon": 150.122,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -12.767,
+            "lon": 143.267,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -35.8,
+            "lon": 148.3,
+            "group": "Plants",
+            "name": "Bago Leekorchid"
+          },
+          {
+            "lat": -37.88,
+            "lon": 146.46,
+            "group": "Fish",
+            "name": "Tapered Galaxias"
+          },
+          {
+            "lat": -35.533,
+            "lon": 144.968,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -23.608,
+            "lon": 132.77,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -18,
+            "lon": 122.2,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -15.27,
+            "lon": 128.27,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -28.667,
+            "lon": 148.883,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -40.958,
+            "lon": 145.549,
+            "group": "Plants",
+            "name": "Thickstem Fairy Fingers"
+          },
+          {
+            "lat": -36.785,
+            "lon": 142.35,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -30.9,
+            "lon": 121.3,
+            "group": "Invertebrates",
+            "name": "Arid Bronze Azure"
+          },
+          {
+            "lat": -32.901,
+            "lon": 151.738,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -38.055,
+            "lon": 140.756,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.653,
+            "lon": 150.256,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -36.9,
+            "lon": 149.7,
+            "group": "Plants",
+            "name": "Box Range Zieria"
+          },
+          {
+            "lat": -32.8,
+            "lon": 115.6,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -15.987,
+            "lon": 129.034,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -26.467,
+            "lon": 136.467,
+            "group": "Fish",
+            "name": "Dalhousie Catfish"
+          },
+          {
+            "lat": -28.382,
+            "lon": 153.088,
+            "group": "Invertebrates",
+            "name": "Euastacus dalagarbe"
+          },
+          {
+            "lat": -37.448,
+            "lon": 145.694,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -34.199,
+            "lon": 142.098,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -42.518,
+            "lon": 147.665,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -33.703,
+            "lon": 140.989,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -42.133,
+            "lon": 148.267,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -30.457,
+            "lon": 153.041,
+            "group": "Invertebrates",
+            "name": "Australian Fritillary"
+          },
+          {
+            "lat": -30.4,
+            "lon": 152.8,
+            "group": "Reptiles",
+            "name": "Georges Helmeted Turtle"
+          },
+          {
+            "lat": -34.31,
+            "lon": 148.33,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -16.333,
+            "lon": 145.333,
+            "group": "Plants",
+            "name": "Mitrantia bilocularis"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.1,
+            "group": "Invertebrates",
+            "name": "Dunsborough Burrowing Crayfish"
+          },
+          {
+            "lat": -32.632,
+            "lon": 151.834,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -32.308,
+            "lon": 150.467,
+            "group": "Plants",
+            "name": "Denman Pomaderris"
+          },
+          {
+            "lat": -16.917,
+            "lon": 145.775,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -26.1,
+            "lon": 152,
+            "group": "Reptiles",
+            "name": "Nangur Spiny Skink"
+          },
+          {
+            "lat": -30.381,
+            "lon": 150.733,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -23.606,
+            "lon": 132.838,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -36.683,
+            "lon": 146.895,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.7,
+            "lon": 150.6,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -33.1,
+            "lon": 151.1,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -34.779,
+            "lon": 149.269,
+            "group": "Fish",
+            "name": "Bald Carp Gudgeon"
+          },
+          {
+            "lat": -15.9,
+            "lon": 136.233,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -21.159,
+            "lon": 149.157,
+            "group": "Plants",
+            "name": "Phillip Island Hibiscus"
+          },
+          {
+            "lat": -31.916,
+            "lon": 132.378,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -34.8,
+            "lon": 117.6,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -34.226,
+            "lon": 138.02,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -33.3,
+            "lon": 118.9,
+            "group": "Plants",
+            "name": "Remote Thorny Lignum"
+          },
+          {
+            "lat": -36.162,
+            "lon": 146.241,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -25.3,
+            "lon": 152.8,
+            "group": "Reptiles",
+            "name": "Mary River Turtle"
+          },
+          {
+            "lat": -38.18,
+            "lon": 143.905,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -41.267,
+            "lon": 146.4,
+            "group": "Plants",
+            "name": "Robust Fingers"
+          },
+          {
+            "lat": -16.947,
+            "lon": 145.752,
+            "group": "Plants",
+            "name": "Haines's Orange Mangrove"
+          },
+          {
+            "lat": -12.649,
+            "lon": 132.507,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -24.628,
+            "lon": 118.742,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -35.646,
+            "lon": 140.632,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -38.28,
+            "lon": 142.53,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -11.99,
+            "lon": 142.08,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -36.583,
+            "lon": 146.083,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -34.9,
+            "lon": 137.6,
+            "group": "Plants",
+            "name": "Ghost Spiderorchid"
+          },
+          {
+            "lat": -30.906,
+            "lon": 152.744,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -37.889,
+            "lon": 145.407,
+            "group": "Plants",
+            "name": "White Starbush"
+          },
+          {
+            "lat": -40.797,
+            "lon": 145.269,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.102,
+            "lon": 145.211,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -30.524,
+            "lon": 151.733,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -36.4,
+            "lon": 148.4,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -34.3,
+            "lon": 115.1,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -37.542,
+            "lon": 145.475,
+            "group": "Plants",
+            "name": "Round-leaf Pomaderris"
+          },
+          {
+            "lat": -38.595,
+            "lon": 142.887,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -33.154,
+            "lon": 151.419,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -30.6,
+            "lon": 150.7,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -27.983,
+            "lon": 152.667,
+            "group": "Plants",
+            "name": "Ormeau Bottle Tree"
+          },
+          {
+            "lat": -35.455,
+            "lon": 138.761,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.573,
+            "lon": 150.853,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -40.85,
+            "lon": 145.117,
+            "group": "Plants",
+            "name": "Robust Leekorchid"
+          },
+          {
+            "lat": -37.261,
+            "lon": 149.835,
+            "group": "Plants",
+            "name": "Narrabarba Wattle"
+          },
+          {
+            "lat": -32.6,
+            "lon": 152.2,
+            "group": "Plants",
+            "name": "Tuncurry Midge Orchid"
+          },
+          {
+            "lat": -35.641,
+            "lon": 137.641,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.429,
+            "lon": 145.225,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -25.454,
+            "lon": 150.021,
+            "group": "Invertebrates",
+            "name": "Boggomoss Snail"
+          },
+          {
+            "lat": -33.375,
+            "lon": 150.673,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -22.53,
+            "lon": 150.494,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.832,
+            "lon": 144.368,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -36.834,
+            "lon": 142.969,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -33.3,
+            "lon": 115.8,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34.25,
+            "lon": 142.08,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -38.278,
+            "lon": 145.099,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -31.409,
+            "lon": 151.333,
+            "group": "Plants",
+            "name": "Dungowan Starbush"
+          },
+          {
+            "lat": -38.54,
+            "lon": 142.993,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -35.853,
+            "lon": 143.524,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -36.186,
+            "lon": 145.239,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -25.609,
+            "lon": 152.874,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.603,
+            "lon": 138.243,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -41.303,
+            "lon": 148.259,
+            "group": "Plants",
+            "name": "St Helens Waxflower"
+          },
+          {
+            "lat": -33.3,
+            "lon": 116.2,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -28.843,
+            "lon": 153.608,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.456,
+            "lon": 142.586,
+            "group": "Plants",
+            "name": "Wimmera Rice-flower"
+          },
+          {
+            "lat": -36.4,
+            "lon": 148.2,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -26.64,
+            "lon": 153.099,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -12.869,
+            "lon": 131.121,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -35,
+            "lon": 117.9,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -12.418,
+            "lon": 134.487,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -43.533,
+            "lon": 146.933,
+            "group": "Plants",
+            "name": "Swamp Eyebright"
+          },
+          {
+            "lat": -34.5,
+            "lon": 116.1,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -33.231,
+            "lon": 151.469,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -35,
+            "lon": 117.9,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.925,
+            "lon": 150.453,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -30.955,
+            "lon": 152.444,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -16.2,
+            "lon": 145.4,
+            "group": "Amphibians",
+            "name": "Beautiful Nursery Frog"
+          },
+          {
+            "lat": -25.255,
+            "lon": 152.808,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -26.812,
+            "lon": 153.126,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.5,
+            "lon": 140.5,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -33.836,
+            "lon": 150.358,
+            "group": "Plants",
+            "name": "Camden White Gum"
+          },
+          {
+            "lat": -12.609,
+            "lon": 131.255,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -30.282,
+            "lon": 153.14,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -34.4,
+            "lon": 115.8,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.6,
+            "lon": 148.73,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -38.421,
+            "lon": 145.349,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -29.267,
+            "lon": 117.633,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -28.258,
+            "lon": 153.575,
+            "group": "Invertebrates",
+            "name": "Mitchell's Rainforest Snail"
+          },
+          {
+            "lat": -30.228,
+            "lon": 152.639,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -32.597,
+            "lon": 150.411,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -39.632,
+            "lon": 144.054,
+            "group": "Birds",
+            "name": "King Island Scrubtit"
+          },
+          {
+            "lat": -12.75,
+            "lon": 142.983,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -30.273,
+            "lon": 150.164,
+            "group": "Reptiles",
+            "name": "Kaputar Rock Skink"
+          },
+          {
+            "lat": -17.555,
+            "lon": 139.7,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.35,
+            "lon": 149.617,
+            "group": "Plants",
+            "name": "Leionema ceratogynum"
+          },
+          {
+            "lat": -37.8,
+            "lon": 146.26,
+            "group": "Amphibians",
+            "name": "Baw Baw Frog"
+          },
+          {
+            "lat": -32.69,
+            "lon": 151.34,
+            "group": "Plants",
+            "name": "North Rothbury Persoonia"
+          },
+          {
+            "lat": -14.3,
+            "lon": 126.7,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -28.2,
+            "lon": 114.2,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -31.189,
+            "lon": 152.976,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.91,
+            "lon": 141.98,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -13.249,
+            "lon": 132.318,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -12.122,
+            "lon": 132.606,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -13.8,
+            "lon": 143.3,
+            "group": "Reptiles",
+            "name": "Mcilwraith Leaf-tailed Gecko"
+          },
+          {
+            "lat": -17.8,
+            "lon": 145.489,
+            "group": "Plants",
+            "name": "Prostanthera clotteniana"
+          },
+          {
+            "lat": -32.331,
+            "lon": 149.922,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -31.334,
+            "lon": 151.652,
+            "group": "Reptiles",
+            "name": "Long Sunskink"
+          },
+          {
+            "lat": -16.3,
+            "lon": 126.2,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -16.6,
+            "lon": 125.4,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -29.618,
+            "lon": 152.341,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -12.28,
+            "lon": 141.91,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -41.097,
+            "lon": 146.813,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -25.206,
+            "lon": 149.569,
+            "group": "Invertebrates",
+            "name": "Boggomoss Snail"
+          },
+          {
+            "lat": -35.88,
+            "lon": 148.99,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -35.38,
+            "lon": 149.2,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -35,
+            "lon": 117.4,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -30.391,
+            "lon": 152.747,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -31.6,
+            "lon": 118.8,
+            "group": "Plants",
+            "name": "Bodallin Poison"
+          },
+          {
+            "lat": -37.42,
+            "lon": 141.2,
+            "group": "Invertebrates",
+            "name": "The Glenelg River Corrugated Mussel"
+          },
+          {
+            "lat": -26.773,
+            "lon": 153.143,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34.3,
+            "lon": 150.2,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -40.417,
+            "lon": 144.917,
+            "group": "Plants",
+            "name": "Three Hummock Leekorchid"
+          },
+          {
+            "lat": -12.363,
+            "lon": 130.909,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -13.279,
+            "lon": 132.55,
+            "group": "Plants",
+            "name": "Acacia equisetifolia"
+          },
+          {
+            "lat": -16.9,
+            "lon": 145.4,
+            "group": "Amphibians",
+            "name": "Kuranda Tree Frog"
+          },
+          {
+            "lat": -32.226,
+            "lon": 151.34,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -42.864,
+            "lon": 147.336,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -34.803,
+            "lon": 142.346,
+            "group": "Birds",
+            "name": "Mukarrthippi Grasswren"
+          },
+          {
+            "lat": -42.9,
+            "lon": 147.67,
+            "group": "Fish",
+            "name": "Red Handfish"
+          },
+          {
+            "lat": -35.841,
+            "lon": 145.152,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -29.355,
+            "lon": 151.923,
+            "group": "Plants",
+            "name": "Bolivia Homoranthus"
+          },
+          {
+            "lat": -35.3,
+            "lon": 148.6,
+            "group": "Amphibians",
+            "name": "Northern Corroboree Frog"
+          },
+          {
+            "lat": -35.999,
+            "lon": 144.428,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.7,
+            "lon": 117.6,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -14.2,
+            "lon": 126.6,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.68,
+            "lon": 151.23,
+            "group": "Plants",
+            "name": "Caley's Grevillea"
+          },
+          {
+            "lat": -26.088,
+            "lon": 152.782,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -32.7,
+            "lon": 115.6,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -33.001,
+            "lon": 151.694,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -14.08,
+            "lon": 143.641,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -32,
+            "lon": 116,
+            "group": "Plants",
+            "name": "Blue Tinsel Lily"
+          },
+          {
+            "lat": -28,
+            "lon": 151.6,
+            "group": "Invertebrates",
+            "name": "Bulloak Jewel"
+          },
+          {
+            "lat": -38.46,
+            "lon": 142.54,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -37.86,
+            "lon": 142.93,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -35.577,
+            "lon": 138.992,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.4,
+            "lon": 117.5,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -34.1,
+            "lon": 117.3,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -39.7,
+            "lon": 143.833,
+            "group": "Mammals",
+            "name": "Christmas Island Flying Fox"
+          },
+          {
+            "lat": -41.517,
+            "lon": 146.367,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -32.8,
+            "lon": 115.7,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.93,
+            "lon": 143.22,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.3,
+            "lon": 115.4,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -20.5,
+            "lon": 115.5,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -31.3,
+            "lon": 119.6,
+            "group": "Plants",
+            "name": "Sickleleaved Waxflower"
+          },
+          {
+            "lat": -25.271,
+            "lon": 151.122,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -28.535,
+            "lon": 152.502,
+            "group": "Plants",
+            "name": "Phebalium speciosum"
+          },
+          {
+            "lat": -27.5,
+            "lon": 114.6,
+            "group": "Plants",
+            "name": "Straggling Androcalva"
+          },
+          {
+            "lat": -28.775,
+            "lon": 152.27,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -20,
+            "lon": 119,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -37.833,
+            "lon": 146.274,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -37.47,
+            "lon": 142.29,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -42.85,
+            "lon": 147.917,
+            "group": "Fish",
+            "name": "Red Handfish"
+          },
+          {
+            "lat": -37.558,
+            "lon": 146.493,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -19.5,
+            "lon": 147,
+            "group": "Invertebrates",
+            "name": "Mt Elliot Crayfish"
+          },
+          {
+            "lat": -37.98,
+            "lon": 145.871,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -32.289,
+            "lon": 152.062,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -13.729,
+            "lon": 132.731,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -28.1,
+            "lon": 153.3,
+            "group": "Invertebrates",
+            "name": "Euastacus binzayedi"
+          },
+          {
+            "lat": -34.417,
+            "lon": 150.917,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -31.809,
+            "lon": 140.502,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -35.2,
+            "lon": 145.27,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -33.75,
+            "lon": 138.435,
+            "group": "Plants",
+            "name": "Spiny Everlasting"
+          },
+          {
+            "lat": -34.5,
+            "lon": 116,
+            "group": "Plants",
+            "name": "Manyflowered Commersonia"
+          },
+          {
+            "lat": -32.1,
+            "lon": 116,
+            "group": "Plants",
+            "name": "Spider Net Grevillea"
+          },
+          {
+            "lat": -35.3,
+            "lon": 149.3,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -25.722,
+            "lon": 151.505,
+            "group": "Plants",
+            "name": "Grimshaw's Boronia"
+          },
+          {
+            "lat": -35.117,
+            "lon": 147.367,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -38.712,
+            "lon": 146.704,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -32.4,
+            "lon": 149.9,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -23.267,
+            "lon": 150.467,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -34,
+            "lon": 117.6,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.075,
+            "lon": 150.757,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -35.548,
+            "lon": 150.15,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -26.595,
+            "lon": 137.831,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -32.7,
+            "lon": 115.7,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -16.6,
+            "lon": 126.1,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -28.174,
+            "lon": 134.03,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -37.305,
+            "lon": 142.991,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -35.172,
+            "lon": 143.385,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -36.133,
+            "lon": 147.6,
+            "group": "Plants",
+            "name": "Summer Leek-orchid"
+          },
+          {
+            "lat": -28.315,
+            "lon": 153.401,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -26.47,
+            "lon": 135.48,
+            "group": "Fish",
+            "name": "Dalhousie Mogurnda"
+          },
+          {
+            "lat": -38.022,
+            "lon": 146.459,
+            "group": "Plants",
+            "name": "Round-leaf Pomaderris"
+          },
+          {
+            "lat": -36.481,
+            "lon": 145.92,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -30.4,
+            "lon": 119.6,
+            "group": "Plants",
+            "name": "Ironstone Beardheath"
+          },
+          {
+            "lat": -35.303,
+            "lon": 150.47,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -15.437,
+            "lon": 132.767,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -30.49,
+            "lon": 149.35,
+            "group": "Plants",
+            "name": "Lobelia claviflora"
+          },
+          {
+            "lat": -32.8,
+            "lon": 115.7,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.684,
+            "lon": 142.271,
+            "group": "Birds",
+            "name": "Mukarrthippi Grasswren"
+          },
+          {
+            "lat": -34.6,
+            "lon": 150.3,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -36.5,
+            "lon": 140.2,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -15.816,
+            "lon": 129.234,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -35.22,
+            "lon": 149.08,
+            "group": "Plants",
+            "name": "Ginninderra Peppercress"
+          },
+          {
+            "lat": -29.6,
+            "lon": 117.2,
+            "group": "Plants",
+            "name": "Ninghan Violet"
+          },
+          {
+            "lat": -17.552,
+            "lon": 140.655,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -31.912,
+            "lon": 152.573,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -34.826,
+            "lon": 149.82,
+            "group": "Plants",
+            "name": "Delicate Pomaderris"
+          },
+          {
+            "lat": -34.5,
+            "lon": 116.1,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -33.082,
+            "lon": 135.708,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -18.039,
+            "lon": 144.406,
+            "group": "Reptiles",
+            "name": "Lyon's Soil-crevice Skink"
+          },
+          {
+            "lat": -28.917,
+            "lon": 153.583,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -30.9,
+            "lon": 117.1,
+            "group": "Plants",
+            "name": "Velvety Spiral Pod Wattle"
+          },
+          {
+            "lat": -24.367,
+            "lon": 150.611,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -19.398,
+            "lon": 147.11,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -35.344,
+            "lon": 148.39,
+            "group": "Plants",
+            "name": "Tumut Grevillea"
+          },
+          {
+            "lat": -41.25,
+            "lon": 148.085,
+            "group": "Invertebrates",
+            "name": "Bornemissza's Stag Beetle"
+          },
+          {
+            "lat": -14.617,
+            "lon": 143.909,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -41.333,
+            "lon": 148.233,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -34.4,
+            "lon": 117.1,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -32.217,
+            "lon": 151.45,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -35.9,
+            "lon": 148.1,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -15.025,
+            "lon": 129.528,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -13.227,
+            "lon": 135.963,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -41.633,
+            "lon": 146.767,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -24.758,
+            "lon": 152.401,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.373,
+            "lon": 150.229,
+            "group": "Invertebrates",
+            "name": "Euastacus dalagarbe"
+          },
+          {
+            "lat": -35.817,
+            "lon": 148.646,
+            "group": "Plants",
+            "name": "Pimelea bracteata"
+          },
+          {
+            "lat": -33.908,
+            "lon": 149.358,
+            "group": "Plants",
+            "name": "Bossiaea fragrans"
+          },
+          {
+            "lat": -38.064,
+            "lon": 141.016,
+            "group": "Plants",
+            "name": "Coast Leek-orchid"
+          },
+          {
+            "lat": -37.2,
+            "lon": 146.47,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -29.979,
+            "lon": 153.228,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -37.6,
+            "lon": 140.6,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -31.6,
+            "lon": 116,
+            "group": "Plants",
+            "name": "Muchea Bell"
+          },
+          {
+            "lat": -36.367,
+            "lon": 141.754,
+            "group": "Plants",
+            "name": "Wimmera Rice-flower"
+          },
+          {
+            "lat": -16.7,
+            "lon": 125.4,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -23.346,
+            "lon": 131.844,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -32.822,
+            "lon": 151.441,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -30.3,
+            "lon": 117.1,
+            "group": "Plants",
+            "name": "Netveined Gyrostemon"
+          },
+          {
+            "lat": -26.884,
+            "lon": 152.847,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -32,
+            "lon": 117.4,
+            "group": "Plants",
+            "name": "Underground Orchid"
+          },
+          {
+            "lat": -30.555,
+            "lon": 151.019,
+            "group": "Plants",
+            "name": "Zieria odorifera"
+          },
+          {
+            "lat": -32.576,
+            "lon": 150.13,
+            "group": "Plants",
+            "name": "Silky Pomaderris"
+          },
+          {
+            "lat": -26.933,
+            "lon": 134.1,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -42.683,
+            "lon": 147.223,
+            "group": "Plants",
+            "name": "Morrisbys Gum"
+          },
+          {
+            "lat": -30.65,
+            "lon": 151.5,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -34.6,
+            "lon": 117.5,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -33.8,
+            "lon": 115.9,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -37.557,
+            "lon": 149.759,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -13.736,
+            "lon": 136.651,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -34.3,
+            "lon": 117.5,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -34.5,
+            "lon": 116,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -37.38,
+            "lon": 146.04,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -27.325,
+            "lon": 152.203,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -38.05,
+            "lon": 145.967,
+            "group": "Plants",
+            "name": "Round-leaf Pomaderris"
+          },
+          {
+            "lat": -25.685,
+            "lon": 151.778,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -34.531,
+            "lon": 146.429,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -32.7,
+            "lon": 151.2,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -38.123,
+            "lon": 145.626,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -34.66,
+            "lon": 146.374,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -13.099,
+            "lon": 130.784,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -28.098,
+            "lon": 148.972,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -23.804,
+            "lon": 150.77,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -41.167,
+            "lon": 147.367,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -16.5,
+            "lon": 125,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -15.7,
+            "lon": 128.7,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -35,
+            "lon": 116.8,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.1,
+            "lon": 115.2,
+            "group": "Amphibians",
+            "name": "White-bellied Froglet"
+          },
+          {
+            "lat": -36.203,
+            "lon": 146.163,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -16.862,
+            "lon": 145.762,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34.041,
+            "lon": 150.696,
+            "group": "Plants",
+            "name": "Camden White Gum"
+          },
+          {
+            "lat": -30.494,
+            "lon": 152.18,
+            "group": "Plants",
+            "name": "Callitris oblonga"
+          },
+          {
+            "lat": -30.067,
+            "lon": 151.767,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -35.929,
+            "lon": 147.691,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -30.488,
+            "lon": 120.658,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -12.669,
+            "lon": 131.784,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -22.357,
+            "lon": 146.643,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -37.57,
+            "lon": 146.25,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -12.578,
+            "lon": 132.452,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.6,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -35.767,
+            "lon": 140.463,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -31.827,
+            "lon": 151.522,
+            "group": "Plants",
+            "name": "Euphrasia arguta"
+          },
+          {
+            "lat": -14.567,
+            "lon": 132.767,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -33.5,
+            "lon": 118.6,
+            "group": "Plants",
+            "name": "Ballerina Orchid"
+          },
+          {
+            "lat": -36.493,
+            "lon": 144.813,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -37.165,
+            "lon": 143.634,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -37.09,
+            "lon": 147.13,
+            "group": "Fish",
+            "name": "Dargo Galaxias"
+          },
+          {
+            "lat": -28.09,
+            "lon": 153.459,
+            "group": "Plants",
+            "name": "Smooth Scrub Turpentine"
+          },
+          {
+            "lat": -24.4,
+            "lon": 151.2,
+            "group": "Amphibians",
+            "name": "Kroombit Treefrog"
+          },
+          {
+            "lat": -28.806,
+            "lon": 153.278,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -38.75,
+            "lon": 143.27,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -13.233,
+            "lon": 131.133,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -21.283,
+            "lon": 130.05,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -21.077,
+            "lon": 149.206,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -32.1,
+            "lon": 147.5,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -26.047,
+            "lon": 153.104,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -34.8,
+            "lon": 137.7,
+            "group": "Plants",
+            "name": "Ghost Spiderorchid"
+          },
+          {
+            "lat": -37.1,
+            "lon": 147.01,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -36.602,
+            "lon": 145.887,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.7,
+            "lon": 116.1,
+            "group": "Plants",
+            "name": "Ironstone Brachyscias"
+          },
+          {
+            "lat": -23.627,
+            "lon": 132.729,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -35.371,
+            "lon": 139.138,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -30.45,
+            "lon": 131.83,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -23.732,
+            "lon": 132.947,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -34.304,
+            "lon": 149.973,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -29.109,
+            "lon": 152.428,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -13.096,
+            "lon": 142.942,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -41.767,
+            "lon": 148.2,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -34.659,
+            "lon": 150.218,
+            "group": "Plants",
+            "name": "Broad-leaved Sally"
+          },
+          {
+            "lat": -30.212,
+            "lon": 150.571,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -26.6,
+            "lon": 153,
+            "group": "Invertebrates",
+            "name": "Australian Fritillary"
+          },
+          {
+            "lat": -37.1,
+            "lon": 148.9,
+            "group": "Plants",
+            "name": "Tarengo Leek Orchid"
+          },
+          {
+            "lat": -24.882,
+            "lon": 146.251,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -12.568,
+            "lon": 131.38,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -38.228,
+            "lon": 143.95,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -36.976,
+            "lon": 144.034,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -35.111,
+            "lon": 150.331,
+            "group": "Invertebrates",
+            "name": "Euastacus guwinus"
+          },
+          {
+            "lat": -15.5,
+            "lon": 128.5,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.448,
+            "lon": 135.332,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -27.038,
+            "lon": 137.53,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -25.984,
+            "lon": 151.317,
+            "group": "Plants",
+            "name": "Androcalva beeronensis"
+          },
+          {
+            "lat": -18.95,
+            "lon": 135.2,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -38,
+            "lon": 140.5,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -35.33,
+            "lon": 148.91,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -16.6,
+            "lon": 128.9,
+            "group": "Invertebrates",
+            "name": "Rosewood Keeled Snail"
+          },
+          {
+            "lat": -24.831,
+            "lon": 129.402,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -35.58,
+            "lon": 148.644,
+            "group": "Fish",
+            "name": "Stocky Galaxias"
+          },
+          {
+            "lat": -38.045,
+            "lon": 144.508,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -37.03,
+            "lon": 145.13,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -25.464,
+            "lon": 150.035,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -19.91,
+            "lon": 147.75,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -42.846,
+            "lon": 147.328,
+            "group": "Invertebrates",
+            "name": "Patiriella littoralis"
+          },
+          {
+            "lat": -32.706,
+            "lon": 151.977,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -31.9,
+            "lon": 152.3,
+            "group": "Plants",
+            "name": "Pale Yellow Doubletail"
+          },
+          {
+            "lat": -27.635,
+            "lon": 153.182,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -37.944,
+            "lon": 143.751,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -33.842,
+            "lon": 151.228,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -42.3,
+            "lon": 146.45,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -37.73,
+            "lon": 142.02,
+            "group": "Invertebrates",
+            "name": "The Glenelg River Corrugated Mussel"
+          },
+          {
+            "lat": -34.622,
+            "lon": 135.516,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -32.1,
+            "lon": 152.5,
+            "group": "Plants",
+            "name": "Tuncurry Midge Orchid"
+          },
+          {
+            "lat": -27.305,
+            "lon": 153.067,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -21.18,
+            "lon": 149.193,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -23.183,
+            "lon": 149.917,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -22.454,
+            "lon": 118.455,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -17.1,
+            "lon": 126.6,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -43.421,
+            "lon": 146.165,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -38.677,
+            "lon": 146.834,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -33.075,
+            "lon": 136.055,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -37.489,
+            "lon": 147.931,
+            "group": "Plants",
+            "name": "Leafy Nematolepis"
+          },
+          {
+            "lat": -14.467,
+            "lon": 132.267,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -33.7,
+            "lon": 117.1,
+            "group": "Plants",
+            "name": "Boscabel Conostylis"
+          },
+          {
+            "lat": -32,
+            "lon": 115.5,
+            "group": "Invertebrates",
+            "name": "Short-tongued Native Bee"
+          },
+          {
+            "lat": -34.5,
+            "lon": 115.9,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -37.97,
+            "lon": 143.41,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -34.1,
+            "lon": 118.5,
+            "group": "Plants",
+            "name": "Hibbertia priceana"
+          },
+          {
+            "lat": -15.417,
+            "lon": 145.15,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -29.496,
+            "lon": 133.316,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -37.61,
+            "lon": 141.45,
+            "group": "Invertebrates",
+            "name": "The Glenelg River Corrugated Mussel"
+          },
+          {
+            "lat": -36.74,
+            "lon": 147.57,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -34.416,
+            "lon": 147.429,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -33.8,
+            "lon": 115.1,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -35.5,
+            "lon": 148.4,
+            "group": "Amphibians",
+            "name": "Northern Corroboree Frog"
+          },
+          {
+            "lat": -35.83,
+            "lon": 137.561,
+            "group": "Plants",
+            "name": "Beyeria Bush-pea"
+          },
+          {
+            "lat": -33.4,
+            "lon": 116.1,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -28.25,
+            "lon": 153.117,
+            "group": "Plants",
+            "name": "Smooth Scrub Turpentine"
+          },
+          {
+            "lat": -16.684,
+            "lon": 132.065,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -24.787,
+            "lon": 128.605,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -34.9,
+            "lon": 118.5,
+            "group": "Plants",
+            "name": "Feather-leaved Banksia"
+          },
+          {
+            "lat": -38.352,
+            "lon": 143.006,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -32.574,
+            "lon": 151.41,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -18.867,
+            "lon": 134.767,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -35.094,
+            "lon": 139.304,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -32.962,
+            "lon": 151.596,
+            "group": "Invertebrates",
+            "name": "Euastacus dalagarbe"
+          },
+          {
+            "lat": -37.63,
+            "lon": 145.68,
+            "group": "Invertebrates",
+            "name": "Mt Donna Buang Wingless Stonefly"
+          },
+          {
+            "lat": -43.033,
+            "lon": 146.283,
+            "group": "Invertebrates",
+            "name": "Ammonite Pinwheel Snail"
+          },
+          {
+            "lat": -29.908,
+            "lon": 119.629,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -37.58,
+            "lon": 144.75,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -41.118,
+            "lon": 144.688,
+            "group": "Plants",
+            "name": "Western Leekorchid"
+          },
+          {
+            "lat": -33.1,
+            "lon": 149.9,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -15.953,
+            "lon": 136.978,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.78,
+            "lon": 147.39,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -16.6,
+            "lon": 145.3,
+            "group": "Amphibians",
+            "name": "Tinkling Frog"
+          },
+          {
+            "lat": -31.243,
+            "lon": 152.945,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -41.678,
+            "lon": 146.784,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -36.973,
+            "lon": 144.804,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -27.9,
+            "lon": 115.2,
+            "group": "Plants",
+            "name": "Native Foxglove"
+          },
+          {
+            "lat": -26.761,
+            "lon": 119.868,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -32.9,
+            "lon": 150,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -35.625,
+            "lon": 148.792,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -29.348,
+            "lon": 153.119,
+            "group": "Plants",
+            "name": "Narrow-leaf Melichrus"
+          },
+          {
+            "lat": -35.924,
+            "lon": 148.592,
+            "group": "Plants",
+            "name": "Pimelea bracteata"
+          },
+          {
+            "lat": -28.611,
+            "lon": 152.887,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -37.641,
+            "lon": 145.086,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -37.7,
+            "lon": 140.7,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -16.449,
+            "lon": 145.408,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -14.915,
+            "lon": 141.621,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -17.95,
+            "lon": 145.652,
+            "group": "Invertebrates",
+            "name": "Cardwell Hairy Crayfish"
+          },
+          {
+            "lat": -36.908,
+            "lon": 149.241,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -33.479,
+            "lon": 151.437,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -35.25,
+            "lon": 143.41,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.6,
+            "lon": 118.7,
+            "group": "Plants",
+            "name": "Largeflowered Scaevola"
+          },
+          {
+            "lat": -37.13,
+            "lon": 147.18,
+            "group": "Fish",
+            "name": "Dargo Galaxias"
+          },
+          {
+            "lat": -42.026,
+            "lon": 147.83,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -32.973,
+            "lon": 151.578,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -31.3,
+            "lon": 149,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -28.3,
+            "lon": 152,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -34,
+            "lon": 140.5,
+            "group": "Birds",
+            "name": "Mukarrthippi Grasswren"
+          },
+          {
+            "lat": -37.539,
+            "lon": 145.843,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -29.22,
+            "lon": 153.33,
+            "group": "Plants",
+            "name": "Swamp Mint-bush"
+          },
+          {
+            "lat": -16.456,
+            "lon": 145.358,
+            "group": "Fish",
+            "name": "Allen's Stiphodon"
+          },
+          {
+            "lat": -34.279,
+            "lon": 148.822,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -40.985,
+            "lon": 147.98,
+            "group": "Plants",
+            "name": "Granite Heath"
+          },
+          {
+            "lat": -23.728,
+            "lon": 132.932,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -32.95,
+            "lon": 137.383,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -16.472,
+            "lon": 129.03,
+            "group": "Invertebrates",
+            "name": "Rosewood Keeled Snail"
+          },
+          {
+            "lat": -32,
+            "lon": 115.8,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -35.449,
+            "lon": 138.951,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.5,
+            "lon": 116.8,
+            "group": "Invertebrates",
+            "name": "A Short-tongued Bee"
+          },
+          {
+            "lat": -37.261,
+            "lon": 142.572,
+            "group": "Plants",
+            "name": "Grampians Globe-pea"
+          },
+          {
+            "lat": -39.68,
+            "lon": 143.82,
+            "group": "Reptiles",
+            "name": "Blue-tailed Snake-eyed Skink"
+          },
+          {
+            "lat": -34.1,
+            "lon": 115.4,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -38.339,
+            "lon": 145.516,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -25.992,
+            "lon": 152.841,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -40.742,
+            "lon": 147.941,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -37.999,
+            "lon": 145.723,
+            "group": "Birds",
+            "name": "Helmeted Honeyeater"
+          },
+          {
+            "lat": -30.483,
+            "lon": 149.983,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -37.61,
+            "lon": 143.327,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -37.907,
+            "lon": 142.589,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -30.289,
+            "lon": 150.189,
+            "group": "Reptiles",
+            "name": "Kaputar Rock Skink"
+          },
+          {
+            "lat": -39.863,
+            "lon": 143.984,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -31.32,
+            "lon": 152.642,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -18,
+            "lon": 145.8,
+            "group": "Amphibians",
+            "name": "Nyakala Frog"
+          },
+          {
+            "lat": -37,
+            "lon": 149,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -30.706,
+            "lon": 152.215,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -41.315,
+            "lon": 148.201,
+            "group": "Plants",
+            "name": "St Helens Waxflower"
+          },
+          {
+            "lat": -33.8,
+            "lon": 121.9,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.532,
+            "lon": 143.729,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -23.7,
+            "lon": 133.87,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -35.23,
+            "lon": 145.8,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -38,
+            "lon": 140.9,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -37.77,
+            "lon": 144.9,
+            "group": "Reptiles",
+            "name": "Victorian Grassland Earless Dragon"
+          },
+          {
+            "lat": -11.961,
+            "lon": 132.635,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.346,
+            "lon": 145.368,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.2,
+            "lon": 116.5,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -35.17,
+            "lon": 145.23,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -36.083,
+            "lon": 146.933,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -36.761,
+            "lon": 142.845,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -34.7,
+            "lon": 118.1,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -24,
+            "lon": 133.333,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -35.523,
+            "lon": 138.597,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -16.986,
+            "lon": 145.595,
+            "group": "Plants",
+            "name": "Prostanthera clotteniana"
+          },
+          {
+            "lat": -33.4,
+            "lon": 118,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -32.8,
+            "lon": 115.8,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -30.37,
+            "lon": 149.17,
+            "group": "Plants",
+            "name": "Lobelia claviflora"
+          },
+          {
+            "lat": -37.948,
+            "lon": 145.298,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -26.644,
+            "lon": 153.098,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -32.6,
+            "lon": 117.3,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -17.364,
+            "lon": 133.568,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -19.2,
+            "lon": 146.5,
+            "group": "Reptiles",
+            "name": "Gulbaru Gecko"
+          },
+          {
+            "lat": -28.22,
+            "lon": 135.68,
+            "group": "Fish",
+            "name": "Dalhousie Catfish"
+          },
+          {
+            "lat": -15.617,
+            "lon": 129.654,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -38.08,
+            "lon": 147.58,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -33.169,
+            "lon": 134.556,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -41.217,
+            "lon": 146.483,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -41.172,
+            "lon": 147.564,
+            "group": "Plants",
+            "name": "Granite Heath"
+          },
+          {
+            "lat": -18.119,
+            "lon": 139.959,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -32.91,
+            "lon": 137.75,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -24.267,
+            "lon": 131.6,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -32.6,
+            "lon": 115.7,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -34.142,
+            "lon": 151.032,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -29.5,
+            "lon": 117.3,
+            "group": "Plants",
+            "name": "Acacia"
+          },
+          {
+            "lat": -34.472,
+            "lon": 145.109,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -30.4,
+            "lon": 151.2,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -25.111,
+            "lon": 152.529,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.635,
+            "lon": 144.805,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -21.002,
+            "lon": 135.331,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -11.932,
+            "lon": 135.834,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -27.376,
+            "lon": 153.184,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -25.572,
+            "lon": 152.714,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -26.857,
+            "lon": 151.993,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -33.482,
+            "lon": 149.186,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -23.183,
+            "lon": 142.983,
+            "group": "Birds",
+            "name": "Mukarrthippi Grasswren"
+          },
+          {
+            "lat": -24.928,
+            "lon": 152.493,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.73,
+            "lon": 146.82,
+            "group": "Amphibians",
+            "name": "Spotted Tree Frog"
+          },
+          {
+            "lat": -35.817,
+            "lon": 145.567,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -27.233,
+            "lon": 152.417,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -32.5,
+            "lon": 117.1,
+            "group": "Plants",
+            "name": "Branched Hemigenia"
+          },
+          {
+            "lat": -12.358,
+            "lon": 132.141,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -33.532,
+            "lon": 150.186,
+            "group": "Plants",
+            "name": "Asterolasia buxifolia"
+          },
+          {
+            "lat": -30.38,
+            "lon": 136.85,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -37.6,
+            "lon": 149.667,
+            "group": "Plants",
+            "name": "Genoa Spider-orchid"
+          },
+          {
+            "lat": -37.566,
+            "lon": 144.723,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -37.17,
+            "lon": 146,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -27.581,
+            "lon": 151.992,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -33.434,
+            "lon": 149.572,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -15.465,
+            "lon": 145.247,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -34.737,
+            "lon": 137.487,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -37.9,
+            "lon": 146.54,
+            "group": "Fish",
+            "name": "Tapered Galaxias"
+          },
+          {
+            "lat": -21.919,
+            "lon": 149.463,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -30.495,
+            "lon": 151.709,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -31.191,
+            "lon": 152.217,
+            "group": "Plants",
+            "name": "Callitris oblonga"
+          },
+          {
+            "lat": -35.3,
+            "lon": 149.1,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -41.01,
+            "lon": 144.61,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -33.7,
+            "lon": 117.5,
+            "group": "Plants",
+            "name": "Lemon Spider Orchid"
+          },
+          {
+            "lat": -19.671,
+            "lon": 134.172,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.08,
+            "lon": 146.92,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -17.717,
+            "lon": 145.517,
+            "group": "Amphibians",
+            "name": "Nyakala Frog"
+          },
+          {
+            "lat": -32.223,
+            "lon": 152.254,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -30.149,
+            "lon": 153.13,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -38.33,
+            "lon": 142.73,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -34,
+            "lon": 117.1,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -34.272,
+            "lon": 138.158,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -30.396,
+            "lon": 152.94,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -25.482,
+            "lon": 148.841,
+            "group": "Reptiles",
+            "name": "Arcadia Velvet Gecko"
+          },
+          {
+            "lat": -38.22,
+            "lon": 146.55,
+            "group": "Fish",
+            "name": "West Gippsland Galaxias"
+          },
+          {
+            "lat": -15.718,
+            "lon": 131.919,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -31.583,
+            "lon": 152.75,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -16.217,
+            "lon": 136,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -32.86,
+            "lon": 150.314,
+            "group": "Invertebrates",
+            "name": "Euastacus vesper"
+          },
+          {
+            "lat": -37.28,
+            "lon": 148.57,
+            "group": "Fish",
+            "name": "Mcdowall's Galaxias"
+          },
+          {
+            "lat": -32.6,
+            "lon": 115.8,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -35.148,
+            "lon": 148.685,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -16.699,
+            "lon": 135.618,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -43.366,
+            "lon": 147.234,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -32.246,
+            "lon": 133.819,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -31,
+            "lon": 146.3,
+            "group": "Birds",
+            "name": "Mukarrthippi Grasswren"
+          },
+          {
+            "lat": -40.7,
+            "lon": 144.7,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -34.945,
+            "lon": 138.794,
+            "group": "Plants",
+            "name": "Mount Lofty Speedwell"
+          },
+          {
+            "lat": -13.383,
+            "lon": 131.5,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -36.425,
+            "lon": 145.632,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -11.41,
+            "lon": 130.91,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -33.492,
+            "lon": 151.342,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -42.961,
+            "lon": 147.505,
+            "group": "Plants",
+            "name": "Morrisbys Gum"
+          },
+          {
+            "lat": -28.007,
+            "lon": 149.393,
+            "group": "Mammals",
+            "name": "Northern Hairy-nosed Wombat"
+          },
+          {
+            "lat": -34.096,
+            "lon": 150.059,
+            "group": "Plants",
+            "name": "Kowmung Hakea"
+          },
+          {
+            "lat": -31.6,
+            "lon": 115.6,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -31.5,
+            "lon": 151.451,
+            "group": "Plants",
+            "name": "Dungowan Starbush"
+          },
+          {
+            "lat": -22.25,
+            "lon": 131.767,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -36.229,
+            "lon": 146.23,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -28.867,
+            "lon": 153.05,
+            "group": "Invertebrates",
+            "name": "Mitchell's Rainforest Snail"
+          },
+          {
+            "lat": -12.322,
+            "lon": 132.954,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -33.3,
+            "lon": 115.6,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -20.683,
+            "lon": 135.217,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -18,
+            "lon": 122.4,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35.995,
+            "lon": 139.486,
+            "group": "Plants",
+            "name": "Woods Well Spyridium"
+          },
+          {
+            "lat": -35.267,
+            "lon": 138.417,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -28.6,
+            "lon": 153.4,
+            "group": "Plants",
+            "name": "Nightcap Oak"
+          },
+          {
+            "lat": -38.332,
+            "lon": 143.501,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -38.373,
+            "lon": 145.626,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -35.9,
+            "lon": 148.6,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -15.561,
+            "lon": 130.347,
+            "group": "Reptiles",
+            "name": "Northern Blue-tongued Skink"
+          },
+          {
+            "lat": -35.517,
+            "lon": 148.15,
+            "group": "Plants",
+            "name": "Pimelea bracteata"
+          },
+          {
+            "lat": -31,
+            "lon": 116,
+            "group": "Plants",
+            "name": "Grevillea Gillingarra"
+          },
+          {
+            "lat": -26.819,
+            "lon": 153.124,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -42.118,
+            "lon": 148.071,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -36.665,
+            "lon": 141.932,
+            "group": "Plants",
+            "name": "Wimmera Rice-flower"
+          },
+          {
+            "lat": -33.5,
+            "lon": 117.5,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -34.674,
+            "lon": 148.986,
+            "group": "Amphibians",
+            "name": "Yellow-spotted Tree Frog"
+          },
+          {
+            "lat": -31.8,
+            "lon": 117.6,
+            "group": "Plants",
+            "name": "Lasiopetalum moullean"
+          },
+          {
+            "lat": -36.8,
+            "lon": 144.5,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -22.595,
+            "lon": 118.14,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -35.794,
+            "lon": 136.588,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -33.769,
+            "lon": 151.272,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -17,
+            "lon": 145.6,
+            "group": "Amphibians",
+            "name": "Kuranda Tree Frog"
+          },
+          {
+            "lat": -18.221,
+            "lon": 146.005,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -38.04,
+            "lon": 142.72,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -27.515,
+            "lon": 153.086,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -32.3,
+            "lon": 150.7,
+            "group": "Plants",
+            "name": "Tarengo Leek Orchid"
+          },
+          {
+            "lat": -34.22,
+            "lon": 145.15,
+            "group": "Birds",
+            "name": "Plains Wanderer"
+          },
+          {
+            "lat": -29.714,
+            "lon": 152.601,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -35.1,
+            "lon": 117.9,
+            "group": "Plants",
+            "name": "Feather-leaved Banksia"
+          },
+          {
+            "lat": -36.274,
+            "lon": 144.354,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -23.1,
+            "lon": 131.2,
+            "group": "Mammals",
+            "name": "Central Rock-rat"
+          },
+          {
+            "lat": -38.08,
+            "lon": 145.25,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -13.479,
+            "lon": 132.251,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -19.2,
+            "lon": 121.4,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -38.664,
+            "lon": 146.688,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -28,
+            "lon": 114.7,
+            "group": "Plants",
+            "name": "Straggling Androcalva"
+          },
+          {
+            "lat": -24.367,
+            "lon": 115.333,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -22.22,
+            "lon": 149.02,
+            "group": "Reptiles",
+            "name": "Southern Snapping Turtle"
+          },
+          {
+            "lat": -22.265,
+            "lon": 117.951,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -28.68,
+            "lon": 137.37,
+            "group": "Reptiles",
+            "name": "Canberra Grassland Earless Dragon"
+          },
+          {
+            "lat": -23.618,
+            "lon": 150.462,
+            "group": "Plants",
+            "name": "Struck Oil Myrtle"
+          },
+          {
+            "lat": -35.271,
+            "lon": 150.405,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -29.8,
+            "lon": 116.6,
+            "group": "Plants",
+            "name": "Stylidium amabile"
+          },
+          {
+            "lat": -16.8,
+            "lon": 145.6,
+            "group": "Amphibians",
+            "name": "Kuranda Tree Frog"
+          },
+          {
+            "lat": -34.2,
+            "lon": 116.1,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -43.145,
+            "lon": 147.994,
+            "group": "Plants",
+            "name": "Pretty Leekorchid"
+          },
+          {
+            "lat": -28.409,
+            "lon": 152.362,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -29.48,
+            "lon": 152.67,
+            "group": "Invertebrates",
+            "name": "Mitchell's Rainforest Snail"
+          },
+          {
+            "lat": -36.946,
+            "lon": 143.798,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -32.9,
+            "lon": 150.8,
+            "group": "Birds",
+            "name": "Regent Honeyeater"
+          },
+          {
+            "lat": -12.322,
+            "lon": 131.95,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.4,
+            "lon": 139.8,
+            "group": "Birds",
+            "name": "Orange-bellied Parrot"
+          },
+          {
+            "lat": -37.244,
+            "lon": 145.897,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -12.683,
+            "lon": 132.519,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -34.294,
+            "lon": 150.374,
+            "group": "Plants",
+            "name": "Camden White Gum"
+          },
+          {
+            "lat": -34.4,
+            "lon": 118.3,
+            "group": "Invertebrates",
+            "name": "Banksia Montana Mealybug"
+          },
+          {
+            "lat": -35.6,
+            "lon": 149.8,
+            "group": "Plants",
+            "name": "Araluen Zieria"
+          },
+          {
+            "lat": -33.3,
+            "lon": 116.7,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -21.7,
+            "lon": 115,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -16.483,
+            "lon": 145.459,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -24.9,
+            "lon": 113.7,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -13.095,
+            "lon": 132.994,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -38.3,
+            "lon": 143.28,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -22.1,
+            "lon": 114.1,
+            "group": "Reptiles",
+            "name": "Short-nosed Sea Snake"
+          },
+          {
+            "lat": -36.211,
+            "lon": 144.567,
+            "group": "Plants",
+            "name": "Spiny Rice-flower"
+          },
+          {
+            "lat": -31.976,
+            "lon": 151.78,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -36.819,
+            "lon": 143.272,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -31.455,
+            "lon": 152.903,
+            "group": "Plants",
+            "name": "Native Guava"
+          },
+          {
+            "lat": -35.317,
+            "lon": 148.927,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -36.706,
+            "lon": 143.273,
+            "group": "Birds",
+            "name": "Swift Parrot"
+          },
+          {
+            "lat": -37.1,
+            "lon": 140.8,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -14.557,
+            "lon": 144.084,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -34.4,
+            "lon": 116,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -28.9,
+            "lon": 115.8,
+            "group": "Plants",
+            "name": "Androcalva adenothalia"
+          },
+          {
+            "lat": -30,
+            "lon": 116.6,
+            "group": "Plants",
+            "name": "Native Foxglove"
+          },
+          {
+            "lat": -37.288,
+            "lon": 145.349,
+            "group": "Mammals",
+            "name": "Leadbeater's Possum"
+          },
+          {
+            "lat": -33.7,
+            "lon": 115.3,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -12.58,
+            "lon": 143.41,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.2,
+            "lon": 148.4,
+            "group": "Amphibians",
+            "name": "Southern Corroboree Frog"
+          },
+          {
+            "lat": -31.432,
+            "lon": 152.918,
+            "group": "Invertebrates",
+            "name": "Australian Fritillary"
+          },
+          {
+            "lat": -13.091,
+            "lon": 130.707,
+            "group": "Reptiles",
+            "name": "Mitchell's Water Monitor"
+          },
+          {
+            "lat": -28.717,
+            "lon": 153.606,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -33.494,
+            "lon": 151.42,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -36.375,
+            "lon": 148.483,
+            "group": "Plants",
+            "name": "Pimelea bracteata"
+          },
+          {
+            "lat": -29.6,
+            "lon": 116.3,
+            "group": "Plants",
+            "name": "Native Foxglove"
+          },
+          {
+            "lat": -32.467,
+            "lon": 151.967,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          },
+          {
+            "lat": -31.6,
+            "lon": 115.8,
+            "group": "Invertebrates",
+            "name": "Short-tongued Native Bee"
+          },
+          {
+            "lat": -34.9,
+            "lon": 116.5,
+            "group": "Invertebrates",
+            "name": "Yabbies"
+          },
+          {
+            "lat": -36.762,
+            "lon": 145.432,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -42.925,
+            "lon": 147.411,
+            "group": "Fish",
+            "name": "Spotted Handfish"
+          },
+          {
+            "lat": -38.06,
+            "lon": 141.38,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -33.8,
+            "lon": 115.5,
+            "group": "Mammals",
+            "name": "Western Ringtail Possum"
+          },
+          {
+            "lat": -36.41,
+            "lon": 147.254,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -33.098,
+            "lon": 151.301,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -28.91,
+            "lon": 134.25,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -26.935,
+            "lon": 120.394,
+            "group": "Plants",
+            "name": "Fringed Fire-bush"
+          },
+          {
+            "lat": -38.125,
+            "lon": 143.521,
+            "group": "Birds",
+            "name": "Curlew Sandpiper"
+          },
+          {
+            "lat": -35,
+            "lon": 147,
+            "group": "Fish",
+            "name": "Flathead Galaxias"
+          },
+          {
+            "lat": -34.537,
+            "lon": 150.868,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -40.079,
+            "lon": 147.957,
+            "group": "Birds",
+            "name": "Eastern Curlew"
+          },
+          {
+            "lat": -36.7,
+            "lon": 140.2,
+            "group": "Mammals",
+            "name": "Southern Bent-winged Bat"
+          },
+          {
+            "lat": -12.338,
+            "lon": 131.27,
+            "group": "Fish",
+            "name": "Speartooth Shark"
+          },
+          {
+            "lat": -32.9,
+            "lon": 148.4,
+            "group": "Plants",
+            "name": "Duramana Fingers"
+          },
+          {
+            "lat": -31.417,
+            "lon": 151.902,
+            "group": "Plants",
+            "name": "Scrub Turpentine"
+          }
+        ]
+      },
+      "params": [
+        {
+          "name": "grp",
+          "select": {
+            "type": "point",
+            "fields": [
+              "group"
+            ]
+          },
+          "bind": "legend"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 55,
+        "stroke": "#fff",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "title": "Group",
+          "scale": {
+            "domain": [
+              "Plants",
+              "Birds",
+              "Mammals",
+              "Reptiles",
+              "Amphibians",
+              "Fish",
+              "Invertebrates"
+            ],
+            "range": [
+              "#1A5653",
+              "#C47D5A",
+              "#B89339",
+              "#5DB89D",
+              "#9E3B5C",
+              "#457B9D",
+              "#9B72AA"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "direction": "vertical",
+            "title": "Group",
+            "titleFontSize": 13,
+            "titlePadding": 12,
+            "labelFontSize": 13,
+            "labelLimit": 500,
+            "symbolType": "circle",
+            "symbolSize": 180,
+            "rowPadding": 16,
+            "offset": 0
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "grp",
+            "value": 0.9
+          },
+          "value": 0.1
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Species"
+          },
+          {
+            "field": "group",
+            "title": "Group"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "st": "WA",
+            "alat": -26,
+            "alon": 120,
+            "llat": -26,
+            "llon": 109
+          },
+          {
+            "st": "NT",
+            "alat": -18,
+            "alon": 133,
+            "llat": -9.5,
+            "llon": 129
+          },
+          {
+            "st": "SA",
+            "alat": -30,
+            "alon": 135,
+            "llat": -39,
+            "llon": 132
+          },
+          {
+            "st": "QLD",
+            "alat": -22,
+            "alon": 146,
+            "llat": -17,
+            "llon": 156
+          },
+          {
+            "st": "NSW",
+            "alat": -32,
+            "alon": 147,
+            "llat": -31,
+            "llon": 157
+          },
+          {
+            "st": "VIC",
+            "alat": -37,
+            "alon": 144,
+            "llat": -43,
+            "llon": 140
+          },
+          {
+            "st": "TAS",
+            "alat": -42,
+            "alon": 146.5,
+            "llat": -45.5,
+            "llon": 151
+          },
+          {
+            "st": "ACT",
+            "alat": -35.5,
+            "alon": 149,
+            "llat": -36.5,
+            "llon": 158
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#8A9888",
+        "strokeWidth": 0.7
+      },
+      "encoding": {
+        "latitude": {
+          "field": "alat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "alon",
+          "type": "quantitative"
+        },
+        "latitude2": {
+          "field": "llat"
+        },
+        "longitude2": {
+          "field": "llon"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "st": "WA",
+            "llat": -26,
+            "llon": 109
+          },
+          {
+            "st": "NT",
+            "llat": -9.5,
+            "llon": 129
+          },
+          {
+            "st": "SA",
+            "llat": -39,
+            "llon": 132
+          },
+          {
+            "st": "QLD",
+            "llat": -17,
+            "llon": 156
+          },
+          {
+            "st": "NSW",
+            "llat": -31,
+            "llon": 157
+          },
+          {
+            "st": "VIC",
+            "llat": -43,
+            "llon": 140
+          },
+          {
+            "st": "TAS",
+            "llat": -45.5,
+            "llon": 151
+          },
+          {
+            "st": "ACT",
+            "llat": -36.5,
+            "llon": 158
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 700,
+        "fill": "#3A4D3A"
+      },
+      "encoding": {
+        "latitude": {
+          "field": "llat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "llon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "st",
+          "type": "nominal"
+        }
+      }
+    }
+  ]
+}

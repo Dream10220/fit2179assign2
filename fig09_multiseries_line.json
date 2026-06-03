@@ -1,0 +1,1028 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": "container",
+  "padding": {
+    "left": 5,
+    "top": 5,
+    "right": 120,
+    "bottom": 5
+  },
+  "height": 360,
+  "background": "transparent",
+  "data": {
+    "values": [
+      {
+        "year": 2000,
+        "cat": "Vulnerable",
+        "n": 830,
+        "sev": 1
+      },
+      {
+        "year": 2000,
+        "cat": "Endangered",
+        "n": 505,
+        "sev": 2
+      },
+      {
+        "year": 2000,
+        "cat": "Critically Endangered",
+        "n": 13,
+        "sev": 3
+      },
+      {
+        "year": 2000,
+        "cat": "Extinct",
+        "n": 64,
+        "sev": 4
+      },
+      {
+        "year": 2001,
+        "cat": "Vulnerable",
+        "n": 833,
+        "sev": 1
+      },
+      {
+        "year": 2001,
+        "cat": "Endangered",
+        "n": 516,
+        "sev": 2
+      },
+      {
+        "year": 2001,
+        "cat": "Critically Endangered",
+        "n": 15,
+        "sev": 3
+      },
+      {
+        "year": 2001,
+        "cat": "Extinct",
+        "n": 65,
+        "sev": 4
+      },
+      {
+        "year": 2002,
+        "cat": "Vulnerable",
+        "n": 835,
+        "sev": 1
+      },
+      {
+        "year": 2002,
+        "cat": "Endangered",
+        "n": 526,
+        "sev": 2
+      },
+      {
+        "year": 2002,
+        "cat": "Critically Endangered",
+        "n": 20,
+        "sev": 3
+      },
+      {
+        "year": 2002,
+        "cat": "Extinct",
+        "n": 65,
+        "sev": 4
+      },
+      {
+        "year": 2003,
+        "cat": "Vulnerable",
+        "n": 838,
+        "sev": 1
+      },
+      {
+        "year": 2003,
+        "cat": "Endangered",
+        "n": 537,
+        "sev": 2
+      },
+      {
+        "year": 2003,
+        "cat": "Critically Endangered",
+        "n": 27,
+        "sev": 3
+      },
+      {
+        "year": 2003,
+        "cat": "Extinct",
+        "n": 66,
+        "sev": 4
+      },
+      {
+        "year": 2004,
+        "cat": "Vulnerable",
+        "n": 840,
+        "sev": 1
+      },
+      {
+        "year": 2004,
+        "cat": "Endangered",
+        "n": 547,
+        "sev": 2
+      },
+      {
+        "year": 2004,
+        "cat": "Critically Endangered",
+        "n": 35,
+        "sev": 3
+      },
+      {
+        "year": 2004,
+        "cat": "Extinct",
+        "n": 66,
+        "sev": 4
+      },
+      {
+        "year": 2005,
+        "cat": "Vulnerable",
+        "n": 843,
+        "sev": 1
+      },
+      {
+        "year": 2005,
+        "cat": "Endangered",
+        "n": 558,
+        "sev": 2
+      },
+      {
+        "year": 2005,
+        "cat": "Critically Endangered",
+        "n": 45,
+        "sev": 3
+      },
+      {
+        "year": 2005,
+        "cat": "Extinct",
+        "n": 67,
+        "sev": 4
+      },
+      {
+        "year": 2006,
+        "cat": "Vulnerable",
+        "n": 846,
+        "sev": 1
+      },
+      {
+        "year": 2006,
+        "cat": "Endangered",
+        "n": 568,
+        "sev": 2
+      },
+      {
+        "year": 2006,
+        "cat": "Critically Endangered",
+        "n": 56,
+        "sev": 3
+      },
+      {
+        "year": 2006,
+        "cat": "Extinct",
+        "n": 67,
+        "sev": 4
+      },
+      {
+        "year": 2007,
+        "cat": "Vulnerable",
+        "n": 848,
+        "sev": 1
+      },
+      {
+        "year": 2007,
+        "cat": "Endangered",
+        "n": 579,
+        "sev": 2
+      },
+      {
+        "year": 2007,
+        "cat": "Critically Endangered",
+        "n": 68,
+        "sev": 3
+      },
+      {
+        "year": 2007,
+        "cat": "Extinct",
+        "n": 68,
+        "sev": 4
+      },
+      {
+        "year": 2008,
+        "cat": "Vulnerable",
+        "n": 851,
+        "sev": 1
+      },
+      {
+        "year": 2008,
+        "cat": "Endangered",
+        "n": 589,
+        "sev": 2
+      },
+      {
+        "year": 2008,
+        "cat": "Critically Endangered",
+        "n": 81,
+        "sev": 3
+      },
+      {
+        "year": 2008,
+        "cat": "Extinct",
+        "n": 68,
+        "sev": 4
+      },
+      {
+        "year": 2009,
+        "cat": "Vulnerable",
+        "n": 853,
+        "sev": 1
+      },
+      {
+        "year": 2009,
+        "cat": "Endangered",
+        "n": 600,
+        "sev": 2
+      },
+      {
+        "year": 2009,
+        "cat": "Critically Endangered",
+        "n": 95,
+        "sev": 3
+      },
+      {
+        "year": 2009,
+        "cat": "Extinct",
+        "n": 69,
+        "sev": 4
+      },
+      {
+        "year": 2010,
+        "cat": "Vulnerable",
+        "n": 856,
+        "sev": 1
+      },
+      {
+        "year": 2010,
+        "cat": "Endangered",
+        "n": 610,
+        "sev": 2
+      },
+      {
+        "year": 2010,
+        "cat": "Critically Endangered",
+        "n": 110,
+        "sev": 3
+      },
+      {
+        "year": 2010,
+        "cat": "Extinct",
+        "n": 70,
+        "sev": 4
+      },
+      {
+        "year": 2011,
+        "cat": "Vulnerable",
+        "n": 859,
+        "sev": 1
+      },
+      {
+        "year": 2011,
+        "cat": "Endangered",
+        "n": 621,
+        "sev": 2
+      },
+      {
+        "year": 2011,
+        "cat": "Critically Endangered",
+        "n": 126,
+        "sev": 3
+      },
+      {
+        "year": 2011,
+        "cat": "Extinct",
+        "n": 70,
+        "sev": 4
+      },
+      {
+        "year": 2012,
+        "cat": "Vulnerable",
+        "n": 861,
+        "sev": 1
+      },
+      {
+        "year": 2012,
+        "cat": "Endangered",
+        "n": 631,
+        "sev": 2
+      },
+      {
+        "year": 2012,
+        "cat": "Critically Endangered",
+        "n": 143,
+        "sev": 3
+      },
+      {
+        "year": 2012,
+        "cat": "Extinct",
+        "n": 71,
+        "sev": 4
+      },
+      {
+        "year": 2013,
+        "cat": "Vulnerable",
+        "n": 864,
+        "sev": 1
+      },
+      {
+        "year": 2013,
+        "cat": "Endangered",
+        "n": 642,
+        "sev": 2
+      },
+      {
+        "year": 2013,
+        "cat": "Critically Endangered",
+        "n": 161,
+        "sev": 3
+      },
+      {
+        "year": 2013,
+        "cat": "Extinct",
+        "n": 71,
+        "sev": 4
+      },
+      {
+        "year": 2014,
+        "cat": "Vulnerable",
+        "n": 866,
+        "sev": 1
+      },
+      {
+        "year": 2014,
+        "cat": "Endangered",
+        "n": 652,
+        "sev": 2
+      },
+      {
+        "year": 2014,
+        "cat": "Critically Endangered",
+        "n": 179,
+        "sev": 3
+      },
+      {
+        "year": 2014,
+        "cat": "Extinct",
+        "n": 72,
+        "sev": 4
+      },
+      {
+        "year": 2015,
+        "cat": "Vulnerable",
+        "n": 869,
+        "sev": 1
+      },
+      {
+        "year": 2015,
+        "cat": "Endangered",
+        "n": 663,
+        "sev": 2
+      },
+      {
+        "year": 2015,
+        "cat": "Critically Endangered",
+        "n": 199,
+        "sev": 3
+      },
+      {
+        "year": 2015,
+        "cat": "Extinct",
+        "n": 72,
+        "sev": 4
+      },
+      {
+        "year": 2016,
+        "cat": "Vulnerable",
+        "n": 872,
+        "sev": 1
+      },
+      {
+        "year": 2016,
+        "cat": "Endangered",
+        "n": 673,
+        "sev": 2
+      },
+      {
+        "year": 2016,
+        "cat": "Critically Endangered",
+        "n": 219,
+        "sev": 3
+      },
+      {
+        "year": 2016,
+        "cat": "Extinct",
+        "n": 73,
+        "sev": 4
+      },
+      {
+        "year": 2017,
+        "cat": "Vulnerable",
+        "n": 874,
+        "sev": 1
+      },
+      {
+        "year": 2017,
+        "cat": "Endangered",
+        "n": 684,
+        "sev": 2
+      },
+      {
+        "year": 2017,
+        "cat": "Critically Endangered",
+        "n": 240,
+        "sev": 3
+      },
+      {
+        "year": 2017,
+        "cat": "Extinct",
+        "n": 74,
+        "sev": 4
+      },
+      {
+        "year": 2018,
+        "cat": "Vulnerable",
+        "n": 877,
+        "sev": 1
+      },
+      {
+        "year": 2018,
+        "cat": "Endangered",
+        "n": 694,
+        "sev": 2
+      },
+      {
+        "year": 2018,
+        "cat": "Critically Endangered",
+        "n": 262,
+        "sev": 3
+      },
+      {
+        "year": 2018,
+        "cat": "Extinct",
+        "n": 74,
+        "sev": 4
+      },
+      {
+        "year": 2019,
+        "cat": "Vulnerable",
+        "n": 879,
+        "sev": 1
+      },
+      {
+        "year": 2019,
+        "cat": "Endangered",
+        "n": 705,
+        "sev": 2
+      },
+      {
+        "year": 2019,
+        "cat": "Critically Endangered",
+        "n": 284,
+        "sev": 3
+      },
+      {
+        "year": 2019,
+        "cat": "Extinct",
+        "n": 75,
+        "sev": 4
+      },
+      {
+        "year": 2020,
+        "cat": "Vulnerable",
+        "n": 882,
+        "sev": 1
+      },
+      {
+        "year": 2020,
+        "cat": "Endangered",
+        "n": 715,
+        "sev": 2
+      },
+      {
+        "year": 2020,
+        "cat": "Critically Endangered",
+        "n": 308,
+        "sev": 3
+      },
+      {
+        "year": 2020,
+        "cat": "Extinct",
+        "n": 75,
+        "sev": 4
+      },
+      {
+        "year": 2021,
+        "cat": "Vulnerable",
+        "n": 885,
+        "sev": 1
+      },
+      {
+        "year": 2021,
+        "cat": "Endangered",
+        "n": 726,
+        "sev": 2
+      },
+      {
+        "year": 2021,
+        "cat": "Critically Endangered",
+        "n": 332,
+        "sev": 3
+      },
+      {
+        "year": 2021,
+        "cat": "Extinct",
+        "n": 76,
+        "sev": 4
+      },
+      {
+        "year": 2022,
+        "cat": "Vulnerable",
+        "n": 887,
+        "sev": 1
+      },
+      {
+        "year": 2022,
+        "cat": "Endangered",
+        "n": 736,
+        "sev": 2
+      },
+      {
+        "year": 2022,
+        "cat": "Critically Endangered",
+        "n": 356,
+        "sev": 3
+      },
+      {
+        "year": 2022,
+        "cat": "Extinct",
+        "n": 76,
+        "sev": 4
+      },
+      {
+        "year": 2023,
+        "cat": "Vulnerable",
+        "n": 890,
+        "sev": 1
+      },
+      {
+        "year": 2023,
+        "cat": "Endangered",
+        "n": 747,
+        "sev": 2
+      },
+      {
+        "year": 2023,
+        "cat": "Critically Endangered",
+        "n": 381,
+        "sev": 3
+      },
+      {
+        "year": 2023,
+        "cat": "Extinct",
+        "n": 77,
+        "sev": 4
+      },
+      {
+        "year": 2024,
+        "cat": "Vulnerable",
+        "n": 892,
+        "sev": 1
+      },
+      {
+        "year": 2024,
+        "cat": "Endangered",
+        "n": 757,
+        "sev": 2
+      },
+      {
+        "year": 2024,
+        "cat": "Critically Endangered",
+        "n": 407,
+        "sev": 3
+      },
+      {
+        "year": 2024,
+        "cat": "Extinct",
+        "n": 77,
+        "sev": 4
+      },
+      {
+        "year": 2025,
+        "cat": "Vulnerable",
+        "n": 895,
+        "sev": 1
+      },
+      {
+        "year": 2025,
+        "cat": "Endangered",
+        "n": 768,
+        "sev": 2
+      },
+      {
+        "year": 2025,
+        "cat": "Critically Endangered",
+        "n": 434,
+        "sev": 3
+      },
+      {
+        "year": 2025,
+        "cat": "Extinct",
+        "n": 78,
+        "sev": 4
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          2000,
+          2028
+        ],
+        "nice": false
+      },
+      "axis": {
+        "format": "d",
+        "tickCount": 6,
+        "title": null,
+        "grid": false,
+        "domainColor": "#C4BBA9",
+        "labelColor": "#5C6B62"
+      }
+    },
+    "y": {
+      "field": "n",
+      "type": "quantitative",
+      "title": "Number of listed species",
+      "axis": {
+        "grid": true,
+        "gridColor": "#ECECE4",
+        "gridDash": [
+          2,
+          3
+        ],
+        "titleColor": "#5C6B62",
+        "labelColor": "#5C6B62",
+        "titleFontSize": 11
+      }
+    }
+  },
+  "layer": [
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2019.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#C4BBA9",
+        "strokeWidth": 1,
+        "strokeDash": [
+          3,
+          3
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2019.5,
+            "n": 930,
+            "t": "2019–20 Black Summer"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 9,
+        "fontStyle": "italic",
+        "fill": "#9A8A78"
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "n",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.cat!=='Critically Endangered'"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.2,
+        "interpolate": "monotone",
+        "opacity": 0.78
+      },
+      "encoding": {
+        "color": {
+          "field": "cat",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Vulnerable",
+              "Endangered",
+              "Extinct"
+            ],
+            "range": [
+              "#9DBEB5",
+              "#7AA396",
+              "#8D9A8C"
+            ]
+          },
+          "legend": null
+        },
+        "detail": {
+          "field": "cat"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.cat==='Critically Endangered'"
+        }
+      ],
+      "mark": {
+        "type": "line",
+        "strokeWidth": 3.5,
+        "interpolate": "monotone",
+        "color": "#B5451B"
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year===2025"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 60
+      },
+      "encoding": {
+        "color": {
+          "field": "cat",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Vulnerable",
+              "Endangered",
+              "Critically Endangered",
+              "Extinct"
+            ],
+            "range": [
+              "#9DBEB5",
+              "#7AA396",
+              "#B5451B",
+              "#8D9A8C"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.year===2025"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 9,
+        "fontSize": 11,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "text": {
+          "field": "cat"
+        },
+        "color": {
+          "field": "cat",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Vulnerable",
+              "Endangered",
+              "Critically Endangered",
+              "Extinct"
+            ],
+            "range": [
+              "#7E9B91",
+              "#5E8174",
+              "#B5451B",
+              "#94A088"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 2011.4,
+            "y": 338
+          },
+          {
+            "x": 2012.4,
+            "y": 185
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "stroke": "#B5451B",
+        "strokeWidth": 1,
+        "opacity": 0.6
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "year": 2008.8,
+            "n": 420,
+            "t": "Critically Endangered is the most severe"
+          },
+          {
+            "year": 2008.8,
+            "n": 387,
+            "t": "status before extinction. It climbed from"
+          },
+          {
+            "year": 2008.8,
+            "n": 354,
+            "t": "13 to 434, accelerating after the 2019–20 fires."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11.5,
+        "fontWeight": 700,
+        "fill": "#B5451B",
+        "lineHeight": 15
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "n",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "stroke": "#9A8A78",
+        "strokeWidth": 1,
+        "strokeDash": [
+          3,
+          3
+        ]
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "value": 0.5,
+            "empty": false
+          },
+          "value": 0
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": [
+              "year"
+            ],
+            "nearest": true,
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "point",
+        "size": 55,
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "n",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "cat",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Vulnerable",
+              "Endangered",
+              "Critically Endangered",
+              "Extinct"
+            ],
+            "range": [
+              "#7E9B91",
+              "#5E8174",
+              "#B5451B",
+              "#B6BCB0"
+            ]
+          },
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "value": 1,
+            "empty": false
+          },
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "type": "quantitative",
+            "format": "d",
+            "title": "Year"
+          },
+          {
+            "field": "cat",
+            "title": "Category"
+          },
+          {
+            "field": "n",
+            "title": "Species"
+          }
+        ]
+      }
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 1000,
+  "height": 400,
+  "autosize": {
+    "type": "fit-x",
+    "contains": "padding"
+  },
+  "padding": {
+    "left": 15,
+    "right": 20,
+    "top": 5,
+    "bottom": 5
+  },
+  "data": {
+    "values": [
+      {
+        "family": "Orchidaceae",
+        "count": 241,
+        "group": "Plants"
+      },
+      {
+        "family": "Myrtaceae",
+        "count": 196,
+        "group": "Plants"
+      },
+      {
+        "family": "Fabaceae",
+        "count": 156,
+        "group": "Plants"
+      },
+      {
+        "family": "Proteaceae",
+        "count": 139,
+        "group": "Plants"
+      },
+      {
+        "family": "Rutaceae",
+        "count": 88,
+        "group": "Plants"
+      },
+      {
+        "family": "Asteraceae",
+        "count": 54,
+        "group": "Plants"
+      },
+      {
+        "family": "Parastacidae",
+        "count": 47,
+        "group": "Invertebrates"
+      },
+      {
+        "family": "Lamiaceae",
+        "count": 42,
+        "group": "Plants"
+      },
+      {
+        "family": "Scincidae",
+        "count": 40,
+        "group": "Reptiles"
+      },
+      {
+        "family": "Muridae",
+        "count": 33,
+        "group": "Mammals"
+      },
+      {
+        "family": "Poaceae",
+        "count": 32,
+        "group": "Plants"
+      },
+      {
+        "family": "Euphorbiaceae",
+        "count": 31,
+        "group": "Plants"
+      },
+      {
+        "family": "Galaxiidae",
+        "count": 29,
+        "group": "Fish"
+      },
+      {
+        "family": "Macropodidae",
+        "count": 28,
+        "group": "Mammals"
+      },
+      {
+        "family": "Rhamnaceae",
+        "count": 25,
+        "group": "Plants"
+      },
+      {
+        "family": "Scrophulariaceae",
+        "count": 23,
+        "group": "Plants"
+      },
+      {
+        "family": "Malvaceae",
+        "count": 22,
+        "group": "Plants"
+      },
+      {
+        "family": "Myobatrachidae",
+        "count": 22,
+        "group": "Amphibians"
+      }
+    ]
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "rank",
+          "as": "familyRank"
+        }
+      ],
+      "sort": [
+        {
+          "field": "count",
+          "order": "descending"
+        }
+      ]
+    },
+    {
+      "filter": "datum.familyRank<=15"
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "family",
+      "type": "nominal",
+      "title": null,
+      "sort": {
+        "field": "count",
+        "order": "descending"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#D4CEBC",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "x": {
+          "field": "count",
+          "type": "quantitative",
+          "title": "Threatened Species",
+          "scale": {
+            "domain": [
+              0,
+              250
+            ]
+          }
+        },
+        "x2": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 180,
+        "opacity": 0.9
+      },
+      "encoding": {
+        "x": {
+          "field": "count",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "title": "Group",
+          "scale": {
+            "domain": [
+              "Plants",
+              "Invertebrates",
+              "Reptiles",
+              "Mammals",
+              "Fish",
+              "Amphibians"
+            ],
+            "range": [
+              "#1A5653",
+              "#9B72AA",
+              "#5DB89D",
+              "#B89339",
+              "#457B9D",
+              "#9E3B5C"
+            ]
+          },
+          "legend": {
+            "orient": "right",
+            "direction": "vertical",
+            "title": "Group",
+            "labelLimit": 500,
+            "labelFontSize": 13,
+            "titleFontSize": 13,
+            "symbolType": "circle",
+            "symbolSize": 120,
+            "rowPadding": 8,
+            "offset": 8
+          }
+        },
+        "tooltip": [
+          {
+            "field": "familyRank",
+            "title": "Rank"
+          },
+          {
+            "field": "family",
+            "title": "Family"
+          },
+          {
+            "field": "count",
+            "title": "Species"
+          },
+          {
+            "field": "group",
+            "title": "Group"
+          }
+        ]
+      }
+    }
+  ]
+}

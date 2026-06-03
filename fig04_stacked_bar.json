@@ -1,0 +1,241 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 880,
+  "height": 380,
+  "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 5,
+    "cornerRadiusTopRight": 5,
+    "stroke": "#FAFBF8",
+    "strokeWidth": 1.2
+  },
+  "data": {
+    "values": [
+      {
+        "st": "ACT",
+        "cat": "Critically Endangered",
+        "n": 11
+      },
+      {
+        "st": "ACT",
+        "cat": "Endangered",
+        "n": 27
+      },
+      {
+        "st": "ACT",
+        "cat": "Extinct",
+        "n": 0
+      },
+      {
+        "st": "ACT",
+        "cat": "Vulnerable",
+        "n": 33
+      },
+      {
+        "st": "NSW",
+        "cat": "Critically Endangered",
+        "n": 152
+      },
+      {
+        "st": "NSW",
+        "cat": "Endangered",
+        "n": 285
+      },
+      {
+        "st": "NSW",
+        "cat": "Extinct",
+        "n": 33
+      },
+      {
+        "st": "NSW",
+        "cat": "Vulnerable",
+        "n": 284
+      },
+      {
+        "st": "NT",
+        "cat": "Critically Endangered",
+        "n": 14
+      },
+      {
+        "st": "NT",
+        "cat": "Endangered",
+        "n": 50
+      },
+      {
+        "st": "NT",
+        "cat": "Extinct",
+        "n": 12
+      },
+      {
+        "st": "NT",
+        "cat": "Vulnerable",
+        "n": 78
+      },
+      {
+        "st": "QLD",
+        "cat": "Critically Endangered",
+        "n": 86
+      },
+      {
+        "st": "QLD",
+        "cat": "Endangered",
+        "n": 199
+      },
+      {
+        "st": "QLD",
+        "cat": "Extinct",
+        "n": 33
+      },
+      {
+        "st": "QLD",
+        "cat": "Vulnerable",
+        "n": 290
+      },
+      {
+        "st": "SA",
+        "cat": "Critically Endangered",
+        "n": 31
+      },
+      {
+        "st": "SA",
+        "cat": "Endangered",
+        "n": 116
+      },
+      {
+        "st": "SA",
+        "cat": "Extinct",
+        "n": 23
+      },
+      {
+        "st": "SA",
+        "cat": "Vulnerable",
+        "n": 146
+      },
+      {
+        "st": "TAS",
+        "cat": "Critically Endangered",
+        "n": 48
+      },
+      {
+        "st": "TAS",
+        "cat": "Endangered",
+        "n": 77
+      },
+      {
+        "st": "TAS",
+        "cat": "Extinct",
+        "n": 11
+      },
+      {
+        "st": "TAS",
+        "cat": "Vulnerable",
+        "n": 89
+      },
+      {
+        "st": "VIC",
+        "cat": "Critically Endangered",
+        "n": 50
+      },
+      {
+        "st": "VIC",
+        "cat": "Endangered",
+        "n": 129
+      },
+      {
+        "st": "VIC",
+        "cat": "Extinct",
+        "n": 13
+      },
+      {
+        "st": "VIC",
+        "cat": "Vulnerable",
+        "n": 161
+      },
+      {
+        "st": "WA",
+        "cat": "Critically Endangered",
+        "n": 106
+      },
+      {
+        "st": "WA",
+        "cat": "Endangered",
+        "n": 276
+      },
+      {
+        "st": "WA",
+        "cat": "Extinct",
+        "n": 31
+      },
+      {
+        "st": "WA",
+        "cat": "Vulnerable",
+        "n": 197
+      }
+    ]
+  },
+  "encoding": {
+    "x": {
+      "field": "st",
+      "type": "nominal",
+      "title": "State",
+      "sort": {
+        "op": "sum",
+        "field": "n",
+        "order": "descending"
+      },
+      "scale": {
+        "paddingInner": 0.35
+      }
+    },
+    "y": {
+      "field": "n",
+      "type": "quantitative",
+      "title": "Species",
+      "stack": true
+    },
+    "color": {
+      "field": "cat",
+      "type": "nominal",
+      "title": "Category",
+      "scale": {
+        "domain": [
+          "Extinct",
+          "Critically Endangered",
+          "Endangered",
+          "Vulnerable"
+        ],
+        "range": [
+          "#14403A",
+          "#2D8A7A",
+          "#7FC2B2",
+          "#CFE6DD"
+        ]
+      },
+      "sort": [
+        "Extinct",
+        "Critically Endangered",
+        "Endangered",
+        "Vulnerable"
+      ],
+      "legend": {
+        "symbolType": "M-1,-0.6 A0.4,0.4 0 0 1 -0.6,-1 L0.6,-1 A0.4,0.4 0 0 1 1,-0.6 L1,0.6 A0.4,0.4 0 0 1 0.6,1 L-0.6,1 A0.4,0.4 0 0 1 -1,0.6 Z",
+        "symbolSize": 160,
+        "labelLimit": 180
+      }
+    },
+    "tooltip": [
+      {
+        "field": "st",
+        "title": "State"
+      },
+      {
+        "field": "cat",
+        "title": "Category"
+      },
+      {
+        "field": "n",
+        "title": "Count"
+      }
+    ]
+  }
+}

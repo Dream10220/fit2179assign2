@@ -1,0 +1,397 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 360,
+  "data": {
+    "values": [
+      {
+        "g": "Amphibians",
+        "s": "ACT",
+        "n": 6
+      },
+      {
+        "g": "Amphibians",
+        "s": "NSW",
+        "n": 29
+      },
+      {
+        "g": "Amphibians",
+        "s": "NT",
+        "n": 1
+      },
+      {
+        "g": "Amphibians",
+        "s": "QLD",
+        "n": 27
+      },
+      {
+        "g": "Amphibians",
+        "s": "SA",
+        "n": 1
+      },
+      {
+        "g": "Amphibians",
+        "s": "TAS",
+        "n": 1
+      },
+      {
+        "g": "Amphibians",
+        "s": "VIC",
+        "n": 11
+      },
+      {
+        "g": "Amphibians",
+        "s": "WA",
+        "n": 3
+      },
+      {
+        "g": "Birds",
+        "s": "ACT",
+        "n": 20
+      },
+      {
+        "g": "Birds",
+        "s": "NSW",
+        "n": 91
+      },
+      {
+        "g": "Birds",
+        "s": "NT",
+        "n": 38
+      },
+      {
+        "g": "Birds",
+        "s": "QLD",
+        "n": 73
+      },
+      {
+        "g": "Birds",
+        "s": "SA",
+        "n": 87
+      },
+      {
+        "g": "Birds",
+        "s": "TAS",
+        "n": 60
+      },
+      {
+        "g": "Birds",
+        "s": "VIC",
+        "n": 72
+      },
+      {
+        "g": "Birds",
+        "s": "WA",
+        "n": 66
+      },
+      {
+        "g": "Fish",
+        "s": "ACT",
+        "n": 4
+      },
+      {
+        "g": "Fish",
+        "s": "NSW",
+        "n": 30
+      },
+      {
+        "g": "Fish",
+        "s": "NT",
+        "n": 8
+      },
+      {
+        "g": "Fish",
+        "s": "QLD",
+        "n": 29
+      },
+      {
+        "g": "Fish",
+        "s": "SA",
+        "n": 20
+      },
+      {
+        "g": "Fish",
+        "s": "TAS",
+        "n": 22
+      },
+      {
+        "g": "Fish",
+        "s": "VIC",
+        "n": 32
+      },
+      {
+        "g": "Fish",
+        "s": "WA",
+        "n": 19
+      },
+      {
+        "g": "Invertebrates",
+        "s": "ACT",
+        "n": 4
+      },
+      {
+        "g": "Invertebrates",
+        "s": "NSW",
+        "n": 42
+      },
+      {
+        "g": "Invertebrates",
+        "s": "NT",
+        "n": 4
+      },
+      {
+        "g": "Invertebrates",
+        "s": "QLD",
+        "n": 26
+      },
+      {
+        "g": "Invertebrates",
+        "s": "SA",
+        "n": 4
+      },
+      {
+        "g": "Invertebrates",
+        "s": "TAS",
+        "n": 19
+      },
+      {
+        "g": "Invertebrates",
+        "s": "VIC",
+        "n": 13
+      },
+      {
+        "g": "Invertebrates",
+        "s": "WA",
+        "n": 16
+      },
+      {
+        "g": "Mammals",
+        "s": "ACT",
+        "n": 12
+      },
+      {
+        "g": "Mammals",
+        "s": "NSW",
+        "n": 56
+      },
+      {
+        "g": "Mammals",
+        "s": "NT",
+        "n": 45
+      },
+      {
+        "g": "Mammals",
+        "s": "QLD",
+        "n": 64
+      },
+      {
+        "g": "Mammals",
+        "s": "SA",
+        "n": 61
+      },
+      {
+        "g": "Mammals",
+        "s": "TAS",
+        "n": 12
+      },
+      {
+        "g": "Mammals",
+        "s": "VIC",
+        "n": 38
+      },
+      {
+        "g": "Mammals",
+        "s": "WA",
+        "n": 68
+      },
+      {
+        "g": "Plants",
+        "s": "ACT",
+        "n": 19
+      },
+      {
+        "g": "Plants",
+        "s": "NSW",
+        "n": 475
+      },
+      {
+        "g": "Plants",
+        "s": "NT",
+        "n": 39
+      },
+      {
+        "g": "Plants",
+        "s": "QLD",
+        "n": 349
+      },
+      {
+        "g": "Plants",
+        "s": "SA",
+        "n": 134
+      },
+      {
+        "g": "Plants",
+        "s": "TAS",
+        "n": 108
+      },
+      {
+        "g": "Plants",
+        "s": "VIC",
+        "n": 176
+      },
+      {
+        "g": "Plants",
+        "s": "WA",
+        "n": 420
+      },
+      {
+        "g": "Reptiles",
+        "s": "ACT",
+        "n": 6
+      },
+      {
+        "g": "Reptiles",
+        "s": "NSW",
+        "n": 37
+      },
+      {
+        "g": "Reptiles",
+        "s": "NT",
+        "n": 20
+      },
+      {
+        "g": "Reptiles",
+        "s": "QLD",
+        "n": 44
+      },
+      {
+        "g": "Reptiles",
+        "s": "SA",
+        "n": 12
+      },
+      {
+        "g": "Reptiles",
+        "s": "TAS",
+        "n": 8
+      },
+      {
+        "g": "Reptiles",
+        "s": "VIC",
+        "n": 15
+      },
+      {
+        "g": "Reptiles",
+        "s": "WA",
+        "n": 22
+      }
+    ]
+  },
+  "transform": [
+    {
+      "window": [
+        {
+          "op": "max",
+          "field": "n",
+          "as": "colMax"
+        }
+      ],
+      "groupby": [
+        "s"
+      ],
+      "frame": [
+        null,
+        null
+      ]
+    },
+    {
+      "calculate": "datum.n / datum.colMax",
+      "as": "colShare"
+    }
+  ],
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "x": {
+          "field": "s",
+          "type": "nominal",
+          "title": "State"
+        },
+        "y": {
+          "field": "g",
+          "type": "nominal",
+          "title": "Group",
+          "axis": {
+            "titlePadding": 18,
+            "titleFontWeight": 700,
+            "titleColor": "#5C6B62"
+          }
+        },
+        "color": {
+          "field": "colShare",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greens"
+          },
+          "title": "% of the state's most threatened group",
+          "legend": {
+            "format": "%",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 220,
+            "gradientThickness": 14,
+            "titleFontSize": 12,
+            "labelFontSize": 11,
+            "titleLimit": 0
+          }
+        },
+        "tooltip": [
+          {
+            "field": "g",
+            "title": "Group"
+          },
+          {
+            "field": "s",
+            "title": "State"
+          },
+          {
+            "field": "n",
+            "title": "Species"
+          },
+          {
+            "field": "colShare",
+            "title": "% of state's most threatened group",
+            "format": ".0%"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10
+      },
+      "encoding": {
+        "x": {
+          "field": "s",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "g",
+          "type": "nominal"
+        },
+        "text": {
+          "field": "n",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.colShare>0.55",
+            "value": "#F2F4EF"
+          },
+          "value": "#1C2B25"
+        }
+      }
+    }
+  ]
+}

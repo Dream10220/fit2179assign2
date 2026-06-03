@@ -1,0 +1,270 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 880,
+  "height": 380,
+  "title": "Threatened Species per 1,000 km²",
+  "projection": {
+    "type": "conicEqualArea",
+    "rotate": [
+      -134,
+      0
+    ],
+    "center": [
+      0,
+      -28
+    ],
+    "parallels": [
+      -18,
+      -36
+    ]
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.geojson",
+    "format": {
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.properties.STATE_NAME=='New South Wales'?'NSW':datum.properties.STATE_NAME=='Victoria'?'VIC':datum.properties.STATE_NAME=='Queensland'?'QLD':datum.properties.STATE_NAME=='Western Australia'?'WA':datum.properties.STATE_NAME=='South Australia'?'SA':datum.properties.STATE_NAME=='Tasmania'?'TAS':datum.properties.STATE_NAME=='Northern Territory'?'NT':'ACT'",
+      "as": "st"
+    },
+    {
+      "lookup": "st",
+      "from": {
+        "data": {
+          "values": [
+            {
+              "st": "ACT",
+              "v": 30.11
+            },
+            {
+              "st": "TAS",
+              "v": 3.363
+            },
+            {
+              "st": "VIC",
+              "v": 1.57
+            },
+            {
+              "st": "NSW",
+              "v": 0.949
+            },
+            {
+              "st": "QLD",
+              "v": 0.354
+            },
+            {
+              "st": "SA",
+              "v": 0.324
+            },
+            {
+              "st": "WA",
+              "v": 0.243
+            },
+            {
+              "st": "NT",
+              "v": 0.115
+            }
+          ]
+        },
+        "key": "st",
+        "fields": [
+          "v"
+        ]
+      }
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#3A4D3A",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "color": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.2,
+              0.5,
+              1,
+              2,
+              5
+            ],
+            "range": [
+              "#d6eeea",
+              "#a3d5cc",
+              "#5db89d",
+              "#2d8a7a",
+              "#1a5653",
+              "#0d2b28"
+            ],
+            "type": "threshold"
+          },
+          "title": "per 1,000 km²",
+          "legend": {
+            "direction": "vertical"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "st",
+            "title": "State"
+          },
+          {
+            "field": "v",
+            "title": "per 1,000 km²",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "alat": -35.3,
+            "alon": 149,
+            "llat": -35.3,
+            "llon": 153.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "stroke": "#5C4F3D",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "latitude": {
+          "field": "alat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "alon",
+          "type": "quantitative"
+        },
+        "latitude2": {
+          "field": "llat"
+        },
+        "longitude2": {
+          "field": "llon"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "st": "WA",
+            "lat": -25.5,
+            "lon": 122.3,
+            "v": 0.243
+          },
+          {
+            "st": "NT",
+            "lat": -19.4,
+            "lon": 133.4,
+            "v": 0.115
+          },
+          {
+            "st": "SA",
+            "lat": -30,
+            "lon": 135.8,
+            "v": 0.324
+          },
+          {
+            "st": "QLD",
+            "lat": -22.5,
+            "lon": 144.4,
+            "v": 0.354
+          },
+          {
+            "st": "NSW",
+            "lat": -31.5,
+            "lon": 146.8,
+            "v": 0.949
+          },
+          {
+            "st": "VIC",
+            "lat": -36.9,
+            "lon": 144,
+            "v": 1.57
+          },
+          {
+            "st": "TAS",
+            "lat": -42,
+            "lon": 146.6,
+            "v": 3.363
+          },
+          {
+            "st": "ACT",
+            "lat": -35.3,
+            "lon": 154.8,
+            "v": 0
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": 600
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "st",
+          "type": "nominal"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.v>1",
+            "value": "#F2F4EF"
+          },
+          "value": "#1C2B25"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lat": -37.5,
+            "lon": 154.5,
+            "t": "ACT: densest, but tiny area"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "fill": "#5C4F3D"
+      },
+      "encoding": {
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ]
+}

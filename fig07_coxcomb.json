@@ -1,0 +1,240 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 460,
+  "height": 460,
+  "data": {
+    "values": [
+      {
+        "year": "2001",
+        "add": 24,
+        "s": 1
+      },
+      {
+        "year": "2002",
+        "add": 24,
+        "s": 1
+      },
+      {
+        "year": "2003",
+        "add": 30,
+        "s": 1
+      },
+      {
+        "year": "2004",
+        "add": 31,
+        "s": 1
+      },
+      {
+        "year": "2005",
+        "add": 26,
+        "s": 1
+      },
+      {
+        "year": "2006",
+        "add": 26,
+        "s": 1
+      },
+      {
+        "year": "2007",
+        "add": 26,
+        "s": 1
+      },
+      {
+        "year": "2008",
+        "add": 23,
+        "s": 1
+      },
+      {
+        "year": "2009",
+        "add": 29,
+        "s": 1
+      },
+      {
+        "year": "2010",
+        "add": 29,
+        "s": 1
+      },
+      {
+        "year": "2011",
+        "add": 17,
+        "s": 1
+      },
+      {
+        "year": "2012",
+        "add": 20,
+        "s": 1
+      },
+      {
+        "year": "2013",
+        "add": 17,
+        "s": 1
+      },
+      {
+        "year": "2014",
+        "add": 26,
+        "s": 1
+      },
+      {
+        "year": "2015",
+        "add": 27,
+        "s": 1
+      },
+      {
+        "year": "2016",
+        "add": 31,
+        "s": 1
+      },
+      {
+        "year": "2017",
+        "add": 29,
+        "s": 1
+      },
+      {
+        "year": "2018",
+        "add": 35,
+        "s": 1
+      },
+      {
+        "year": "2019",
+        "add": 37,
+        "s": 1
+      },
+      {
+        "year": "2020",
+        "add": 36,
+        "s": 1
+      },
+      {
+        "year": "2021",
+        "add": 37,
+        "s": 1
+      },
+      {
+        "year": "2022",
+        "add": 35,
+        "s": 1
+      },
+      {
+        "year": "2023",
+        "add": 130,
+        "s": 1
+      },
+      {
+        "year": "2024",
+        "add": 28,
+        "s": 1
+      },
+      {
+        "year": "2025",
+        "add": 39,
+        "s": 1
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "arc",
+        "innerRadius": 25,
+        "stroke": "#FAFBF8",
+        "strokeWidth": 1,
+        "padAngle": 0.008
+      },
+      "encoding": {
+        "theta": {
+          "field": "year",
+          "type": "nominal",
+          "sort": null
+        },
+        "radius": {
+          "field": "add",
+          "type": "quantitative",
+          "scale": {
+            "type": "sqrt",
+            "zero": true,
+            "rangeMin": 28,
+            "rangeMax": 215
+          }
+        },
+        "color": {
+          "condition": {
+            "test": "datum.year=='2023'",
+            "value": "#B5451B"
+          },
+          "value": "#E8A06B"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "add",
+            "title": "Species Added"
+          }
+        ],
+        "order": {
+          "field": "year",
+          "type": "ordinal"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "t": "2023: 130 added"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "fill": "#B5451B",
+        "dy": -205,
+        "dx": 0
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        },
+        "x": {
+          "value": 230
+        },
+        "y": {
+          "value": 230
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "t": "the record year"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "fontSize": 11,
+        "fill": "#8A6A52",
+        "dy": -189,
+        "dx": 0
+      },
+      "encoding": {
+        "text": {
+          "field": "t"
+        },
+        "x": {
+          "value": 230
+        },
+        "y": {
+          "value": 230
+        }
+      }
+    }
+  ]
+}
